@@ -454,6 +454,7 @@ cuando falla, el div "informacion" viene con con el class "informacion redondo"
 ```
 
 status: debe retornar 0 si la consulta fue exitosa y -1 si hubo algun problema (aparte del 200 OK en ambos casos)
+
 msg: mensaje con error, de haber alguno
 
 Información, sugerencias, código, servidores son todos bienvenidos :)
