@@ -432,4 +432,25 @@ cuando falla, el div "informacion" viene con con el class "informacion redondo"
 </div>
 ```
 
+# Proposición de objeto JSON que debe retornar el API al consultar
+
+```json
+{
+  "nombre": "Fulano Mortadela",
+  "ci": 1234567,
+  "status": 0, /* -1 si hubo algun problema */
+  "msg": null, /* mensaje con error, de haber alguno */
+  "afiliaciones": [
+    {
+      "partido": "DIVERTIDO",
+      "nombre_completo": "Fulano Mortadela <concatenar en orden \"normal\": nombre + apellido>",
+      "ci": "1234567",
+      "lugar_votacion": "<concatenar + toda + la infomacion + como + departamento + distrito + zona + seccional + etc>",
+      "mesa": 108,
+      "orden": 108
+    }
+  ]
+}
+```
+
 Información, sugerencias, código, servidores son todos bienvenidos :)
