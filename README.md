@@ -6,12 +6,14 @@ En Paraguay, se dá el caso en el que nos afilian/inscriben sin consentimiento a
 
 Pueden ayudar a juntar más servicios de padrones, que sepan sean públicos, hasta ahora tengo dos ejemplos de solicitud de webservices públicos:
 
-###ANR
+##ANR
 
-Request: 
+### Request: 
+POST 
+
 curl "http://www.anr.org.py/padron.php" -H "Origin: http://www.anr.org.py" -H "Accept-Encoding: gzip, deflate" -H "Accept-Language: es-419,es;q=0.8,en-US;q=0.6,en;q=0.4,pt;q=0.2,fr;q=0.2" -H "User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.89 Safari/537.36" -H "HTTPS: 1" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" -H "Cache-Control: max-age=0" -H "Referer: http://www.anr.org.py/padron.php" -H "Connection: keep-alive" -H "X-FirePHP-Version: 0.0.6" --data "ci=9999999&buscar2=Buscar" --compressed
 
-Response:
+### Response:
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ES" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <head>
@@ -297,7 +299,9 @@ Content-Type: text/xml;charset=UTF-8
 </resultados>
 ```
 
-###PLRA
+#PLRA
+
+##Request:
 
 URL: http://190.128.194.162/ws/rcp/consulta.php?cc=9999999&op=1
 
@@ -306,14 +310,123 @@ Host: 190.128.194.162
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/UNAVAILABLE (java 1.4)
 
+##Response:
 HTTP/1.1 200 OK
 Date: Thu, 23 Jul 2015 14:49:35 GMT
 Server: Apache/2.2.24 (PowerStack)
 Content-Length: 145
 Connection: close
 Content-Type: text/html; charset=UTF-8
+
 ```json
 ["9999999","CHRISTIAN","MELGAREJO","SAN LORENZO N\u00c2\u00ba5                      ","COL.NAC.CONCEPCION L.DE CHAVEZ","9","999"]
+```
+
+####Fallo:
+```json
+[-1]
+```
+
+##Patria Querida
+
+###Request: 
+
+POST
+
+curl "http://www.patriaquerida.org/padronpq.php" -H "Origin: http://www.patriaquerida.org" -H "Accept-Encoding: gzip, deflate" -H "Accept-Language: es-419,es;q=0.8,en-US;q=0.6,en;q=0.4,pt;q=0.2,fr;q=0.2" -H "User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.89 Safari/537.36" -H "HTTPS: 1" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" -H "Cache-Control: max-age=0" -H "Referer: http://www.patriaquerida.org/padronpq.php" -H "Connection: keep-alive" -H "X-FirePHP-Version: 0.0.6" --data "Cedula_Identidad=9999999&btn_verificar=+Verificar+"%"BB+" --compressed
+
+
+##Padron General:
+
+POST 
+
+curl "http://rcp.tsje.gov.py/dinamico.php" -H "Origin: http://rcp.tsje.gov.py" -H "Accept-Encoding: gzip, deflate" -H "Accept-Language: es-419,es;q=0.8,en-US;q=0.6,en;q=0.4,pt;q=0.2,fr;q=0.2" -H "User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.89 Safari/537.36" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: */*" -H "Referer: http://rcp.tsje.gov.py/" -H "X-Requested-With: XMLHttpRequest" -H "Connection: keep-alive" -H "X-FirePHP-Version: 0.0.6" --data "ci=9999999&fn=99/99/99" --compressed
+
+```html
+<div id="informacion">
+    <div class="items">
+      <div class="losdatos">
+        <div class="datos redondo">
+          <table width="100%">
+            <tr class="titulos">
+              <td>Nombre y Apellido</td>
+
+              <td>Sexo</td>
+
+              <td class="center">Nacionalidad</td>
+            </tr>
+
+            <tr class="infos">
+              <td>CHRISTIAN, MELGAREJO BRESANOVICH</td>
+
+              <td class="center">M</td>
+
+              <td class="center">Paraguaya</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="datos redondo">
+          <table width="100%">
+            <tr>
+              <td class="titulos right" width="100">Departamento</td>
+
+              <td class="infos">CENTRAL</td>
+            </tr>
+
+            <tr>
+              <td class="titulos right">Distrito</td>
+
+              <td class="infos">LIMPIO</td>
+            </tr>
+
+            <tr>
+              <td class="titulos right">Zona</td>
+
+              <td colspan="3" class="infos">LIMPIO</td>
+            </tr>
+
+            <tr>
+              <td class="titulos right">Local</td>
+
+              <td colspan="3" class="infos">503 - ESC.NRO. 13502 SAN SALVADOR<br /></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="datos redondo">
+          <table width="100%">
+            <tr class="titulos">
+              <td>Fecha de Inscripci&oacute;n</td>
+
+              <td>Talonario</td>
+
+              <td>Boleta N&deg;</td>
+            </tr>
+
+            <tr class="infos">
+              <td>2000-01-01 00:00:00</td>
+
+              <td>108</td>
+
+              <td>108</td>
+            </tr>
+          </table>
+        </div><a href="#" onclick="javascript:window.print();" class="bimprimir" title=
+        "Imprimir Inscripcion"><img src="img/trans.gif" alt="" />Imprimir</a>
+      </div>
+    </div>
+  </div>
+```
+
+####Fallo
+
+cuando falla, el div "informacion" viene con con el class "informacion redondo" 
+
+```html
+<div class="informacion redondo">
+...
+</div>
 ```
 
 Información, sugerencias, código, servidores son todos bienvenidos :)
