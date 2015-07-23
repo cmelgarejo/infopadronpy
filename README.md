@@ -1,4 +1,4 @@
-# infopadronpy
+# InfoPadronPY
 
 Este es un proyecto con la intención de encapsular los servicios web de todos los partidos políticos con el afán de tener acceso a nuestra información.
 
@@ -8,12 +8,13 @@ Pueden ayudar a juntar más servicios de padrones, que sepan sean públicos, has
 
 ##ANR
 
-### Request: 
+####Request: 
+
 POST 
 
 curl "http://www.anr.org.py/padron.php" -H "Origin: http://www.anr.org.py" -H "Accept-Encoding: gzip, deflate" -H "Accept-Language: es-419,es;q=0.8,en-US;q=0.6,en;q=0.4,pt;q=0.2,fr;q=0.2" -H "User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.89 Safari/537.36" -H "HTTPS: 1" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" -H "Cache-Control: max-age=0" -H "Referer: http://www.anr.org.py/padron.php" -H "Connection: keep-alive" -H "X-FirePHP-Version: 0.0.6" --data "ci=9999999&buscar2=Buscar" --compressed
 
-### Response:
+#### Response:
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ES" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <head>
@@ -301,7 +302,7 @@ Content-Type: text/xml;charset=UTF-8
 
 #PLRA
 
-##Request:
+####Request:
 
 URL: http://190.128.194.162/ws/rcp/consulta.php?cc=9999999&op=1
 
@@ -310,7 +311,7 @@ Host: 190.128.194.162
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/UNAVAILABLE (java 1.4)
 
-##Response:
+####Response:
 HTTP/1.1 200 OK
 Date: Thu, 23 Jul 2015 14:49:35 GMT
 Server: Apache/2.2.24 (PowerStack)
@@ -329,7 +330,7 @@ Content-Type: text/html; charset=UTF-8
 
 ##Patria Querida
 
-###Request: 
+####Request: 
 
 POST
 
@@ -338,10 +339,12 @@ curl "http://www.patriaquerida.org/padronpq.php" -H "Origin: http://www.patriaqu
 
 ##Padron General:
 
-POST 
+####Request:
 
+POST 
 curl "http://rcp.tsje.gov.py/dinamico.php" -H "Origin: http://rcp.tsje.gov.py" -H "Accept-Encoding: gzip, deflate" -H "Accept-Language: es-419,es;q=0.8,en-US;q=0.6,en;q=0.4,pt;q=0.2,fr;q=0.2" -H "User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.89 Safari/537.36" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: */*" -H "Referer: http://rcp.tsje.gov.py/" -H "X-Requested-With: XMLHttpRequest" -H "Connection: keep-alive" -H "X-FirePHP-Version: 0.0.6" --data "ci=9999999&fn=99/99/99" --compressed
 
+####Response:
 ```html
 <div id="informacion">
     <div class="items">
