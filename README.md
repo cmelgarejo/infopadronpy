@@ -438,8 +438,8 @@ cuando falla, el div "informacion" viene con con el class "informacion redondo"
 {
   "nombre": "Fulano Mortadela",
   "ci": 1234567,
-  "status": 0, /* -1 si hubo algun problema */
-  "msg": null, /* mensaje con error, de haber alguno */
+  "status": 0, 
+  "msg": null,
   "afiliaciones": [
     {
       "partido": "DIVERTIDO",
@@ -452,5 +452,8 @@ cuando falla, el div "informacion" viene con con el class "informacion redondo"
   ]
 }
 ```
+
+status: debe retornar 0 si la consulta fue exitosa y -1 si hubo algun problema (aparte del 200 OK en ambos casos)
+msg: mensaje con error, de haber alguno
 
 Información, sugerencias, código, servidores son todos bienvenidos :)
