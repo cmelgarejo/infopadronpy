@@ -1,0 +1,52 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:context="http://www.springframework.org/schema/context"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security-3.2.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Enable annotation-based security in the application -->
+    <global-method-security secured-annotations="enabled">
+    </global-method-security>
+
+    <!-- This is required for the Auth beans being able to use the bean services -->
+    <beans:import resource="spring-business-context.xml"/>
+    <!-- Scan for security beans in the security package -->
+    <context:component-scan base-package="py.com.sodep.agriket.security"/>
+
+    <http pattern="/api/register/**" security="none"/>
+    <http pattern="/api/users/reset_password" security="none"/>
+
+
+    <!-- REST authentication -->
+    <!-- Ref: http://www.baeldung.com/2011/10/31/securing-a-restful-web-service-with-spring-security-3-1-part-3/ -->
+    <http entry-point-ref="restAuthenticationEntryPoint">
+        <intercept-url pattern="/api/**" access="ROLE_USER"/>
+
+        <form-login
+                authentication-success-handler-ref="successHandler"
+                authentication-failure-handler-ref="failureHandler"/>
+        <logout
+                invalidate-session="true"
+                delete-cookies="JSESSIONID"
+                success-handler-ref="logoutHandler"/>
+    </http>
+
+    <beans:bean id="logoutHandler" class="py.com.sodep.agriket.security.LogoutSuccessHandler"/>
+
+    <beans:bean id="successHandler"
+                class="py.com.sodep.agriket.security.RestAuthenticationSuccessHandler"/>
+    <beans:bean id="failureHandler"
+                class="py.com.sodep.agriket.security.RestAuthenticationFailureHandler"/>
+
+    <authentication-manager alias="authenticationManager">
+        <authentication-provider ref="mainAuthenticationProvider"/>
+    </authentication-manager>
+
+    <beans:bean id="mainAuthProvider" class="py.com.infopadron.security.MainAuthenticationProvider"/>
+    <!-- end - REST authentication -->
+
+</beans:beans>
