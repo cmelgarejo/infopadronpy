@@ -1,2 +1,2 @@
 mvn clean
-./scripts/lib/mvn -DskipTests package
+mvn -DskipTests package

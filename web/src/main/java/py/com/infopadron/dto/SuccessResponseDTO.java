@@ -8,7 +8,7 @@ import java.util.Map;
 import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
 
 /**
- * Created by humber on 22/01/14.
+ * Created by Willynx 
  */
 public class SuccessResponseDTO {
   private boolean success;

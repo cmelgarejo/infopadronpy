@@ -1,0 +1,1606 @@
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 9:39:25 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 9:39:25 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:39:25 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 1018 ms
+jul 24, 2015 9:39:25 AM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 9:39:25 AM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 9:39:25 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 9:39:31 AM org.apache.catalina.core.StandardContext startInternal
+Grave: Error listenerStart
+jul 24, 2015 9:39:31 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+Información: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [322] milliseconds.
+jul 24, 2015 9:39:31 AM org.apache.catalina.core.StandardContext startInternal
+Grave: Falló en arranque del Contexto [] debido a errores previos
+jul 24, 2015 9:39:31 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 5.820 ms
+jul 24, 2015 9:39:31 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:39:31 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:39:31 AM org.apache.catalina.startup.Catalina start
+Información: Server startup in 5928 ms
+jul 24, 2015 9:39:49 AM org.apache.catalina.core.StandardServer await
+Información: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+jul 24, 2015 9:39:49 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:39:49 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:39:49 AM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+jul 24, 2015 9:39:49 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:39:49 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:39:49 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:39:49 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 9:42:09 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 9:42:09 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:42:09 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 759 ms
+jul 24, 2015 9:42:09 AM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 9:42:09 AM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 9:42:09 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 9:42:13 AM org.apache.catalina.core.StandardContext startInternal
+Grave: Error listenerStart
+jul 24, 2015 9:42:13 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+Información: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [368] milliseconds.
+jul 24, 2015 9:42:13 AM org.apache.catalina.core.StandardContext startInternal
+Grave: Falló en arranque del Contexto [] debido a errores previos
+jul 24, 2015 9:42:13 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 3.891 ms
+jul 24, 2015 9:42:13 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:42:13 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:42:13 AM org.apache.catalina.startup.Catalina start
+Información: Server startup in 3961 ms
+jul 24, 2015 9:42:28 AM org.apache.catalina.core.StandardServer await
+Información: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+jul 24, 2015 9:42:28 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:42:28 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:42:28 AM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+jul 24, 2015 9:42:28 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:42:28 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:42:28 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:42:28 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 9:43:06 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 9:43:06 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:43:06 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 791 ms
+jul 24, 2015 9:43:06 AM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 9:43:06 AM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 9:43:06 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 9:43:12 AM org.apache.catalina.core.StandardContext startInternal
+Grave: Error listenerStart
+jul 24, 2015 9:43:12 AM org.apache.catalina.core.StandardContext startInternal
+Grave: Falló en arranque del Contexto [] debido a errores previos
+jul 24, 2015 9:43:12 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+Grave: La aplicación web [] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+jul 24, 2015 9:43:12 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 5.248 ms
+jul 24, 2015 9:43:12 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:43:12 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:43:12 AM org.apache.catalina.startup.Catalina start
+Información: Server startup in 5322 ms
+jul 24, 2015 9:44:41 AM org.apache.catalina.core.StandardServer await
+Información: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+jul 24, 2015 9:44:41 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:44:42 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:44:42 AM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+jul 24, 2015 9:44:42 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:44:42 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:44:42 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:44:42 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:45:03 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 9:45:03 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 9:45:03 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:45:04 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:45:04 AM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 1182 ms
+jul 24, 2015 9:45:04 AM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 9:45:04 AM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 9:45:04 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 9:45:09 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+Información: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [286] milliseconds.
+jul 24, 2015 9:45:10 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 6.142 ms
+jul 24, 2015 9:45:10 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:45:10 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:45:10 AM org.apache.catalina.startup.Catalina start
+Información: Server startup in 6225 ms
+jul 24, 2015 9:46:22 AM org.apache.catalina.core.StandardServer await
+Información: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+jul 24, 2015 9:46:22 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:46:22 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:46:22 AM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+jul 24, 2015 9:46:22 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+Grave: La aplicación web [] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+jul 24, 2015 9:46:22 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:46:22 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:46:22 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:46:22 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 9:46:40 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 9:46:40 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:46:40 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 787 ms
+jul 24, 2015 9:46:40 AM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 9:46:40 AM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 9:46:40 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 9:46:46 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 5.887 ms
+jul 24, 2015 9:46:46 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:46:46 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:46:46 AM org.apache.catalina.startup.Catalina start
+Información: Server startup in 5969 ms
+jul 24, 2015 9:48:12 AM org.apache.catalina.core.StandardServer await
+Información: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+jul 24, 2015 9:48:12 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:48:12 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:48:13 AM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+jul 24, 2015 9:48:13 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+Grave: La aplicación web [] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+jul 24, 2015 9:48:13 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:48:13 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:48:13 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:48:13 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 9:48:31 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 9:48:31 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:48:31 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 787 ms
+jul 24, 2015 9:48:31 AM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 9:48:31 AM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 9:48:31 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 9:48:37 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 6.251 ms
+jul 24, 2015 9:48:37 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:48:37 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:48:37 AM org.apache.catalina.startup.Catalina start
+Información: Server startup in 6327 ms
+jul 24, 2015 9:50:09 AM org.apache.catalina.core.StandardServer await
+Información: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+jul 24, 2015 9:50:09 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:50:09 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:50:09 AM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+jul 24, 2015 9:50:09 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+Grave: La aplicación web [] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+jul 24, 2015 9:50:09 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:50:09 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:50:09 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:50:09 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 9:52:06 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 9:52:06 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:52:06 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 775 ms
+jul 24, 2015 9:52:06 AM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 9:52:06 AM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 9:52:06 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 9:52:11 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+Información: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [357] milliseconds.
+jul 24, 2015 9:52:12 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 6.296 ms
+jul 24, 2015 9:52:12 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:52:12 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:52:12 AM org.apache.catalina.startup.Catalina start
+Información: Server startup in 6368 ms
+jul 24, 2015 9:52:19 AM org.apache.catalina.core.StandardServer await
+Información: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+jul 24, 2015 9:52:19 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:52:19 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:52:19 AM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+jul 24, 2015 9:52:19 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+Grave: La aplicación web [] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+jul 24, 2015 9:52:19 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:52:19 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:52:19 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:52:19 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 9:52:28 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 9:52:28 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:52:28 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 789 ms
+jul 24, 2015 9:52:28 AM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 9:52:28 AM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 9:52:28 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 9:52:34 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 6.307 ms
+jul 24, 2015 9:52:34 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 9:52:34 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 9:52:34 AM org.apache.catalina.startup.Catalina start
+Información: Server startup in 6376 ms
+jul 24, 2015 10:09:27 AM org.apache.catalina.core.StandardServer await
+Información: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+jul 24, 2015 10:09:27 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 10:09:27 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 10:09:27 AM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+jul 24, 2015 10:09:27 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+Grave: La aplicación web [] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+jul 24, 2015 10:09:27 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 10:09:27 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 10:09:27 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 10:09:27 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 10:09:41 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 10:09:41 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 10:09:42 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 10:09:42 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 10:09:42 AM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 781 ms
+jul 24, 2015 10:09:42 AM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 10:09:42 AM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 10:09:42 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 10:09:48 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 5.930 ms
+jul 24, 2015 10:09:48 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 10:09:48 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 10:09:48 AM org.apache.catalina.startup.Catalina start
+Información: Server startup in 6012 ms
+jul 24, 2015 10:51:00 AM org.apache.catalina.core.StandardServer await
+Información: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+jul 24, 2015 10:51:00 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 10:51:00 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 10:51:00 AM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+jul 24, 2015 10:51:00 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+Grave: La aplicación web [] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+jul 24, 2015 10:51:00 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 10:51:00 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 10:51:00 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 10:51:00 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 11:02:53 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 11:02:53 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:02:53 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 843 ms
+jul 24, 2015 11:02:53 AM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 11:02:53 AM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 11:02:53 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 11:02:59 AM org.apache.catalina.core.StandardContext startInternal
+Grave: Error listenerStart
+jul 24, 2015 11:02:59 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+Información: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [300] milliseconds.
+jul 24, 2015 11:02:59 AM org.apache.catalina.core.StandardContext startInternal
+Grave: Falló en arranque del Contexto [] debido a errores previos
+jul 24, 2015 11:02:59 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+Grave: La aplicación web [] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+jul 24, 2015 11:02:59 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+Grave: La aplicación web [] creó un ThreadLocal con clave del tipo [org.apache.log4j.helpers.ThreadLocalMap] (valor [org.apache.log4j.helpers.ThreadLocalMap@5358d56a]) y un valor del tipo [java.util.Hashtable] (valor [{}]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+jul 24, 2015 11:02:59 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 5.793 ms
+jul 24, 2015 11:02:59 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:02:59 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:02:59 AM org.apache.catalina.startup.Catalina start
+Información: Server startup in 5872 ms
+jul 24, 2015 11:04:48 AM org.apache.catalina.core.StandardServer await
+Información: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+jul 24, 2015 11:04:48 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:04:48 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:04:48 AM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+jul 24, 2015 11:04:48 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:04:48 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:04:48 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:04:48 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 11:04:54 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 11:04:54 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:04:54 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 783 ms
+jul 24, 2015 11:04:54 AM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 11:04:54 AM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 11:04:54 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 11:05:01 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+Información: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [290] milliseconds.
+jul 24, 2015 11:05:02 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 7.810 ms
+jul 24, 2015 11:05:02 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:05:02 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:05:02 AM org.apache.catalina.startup.Catalina start
+Información: Server startup in 7882 ms
+jul 24, 2015 11:10:20 AM org.apache.catalina.core.StandardServer await
+Información: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+jul 24, 2015 11:10:20 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:10:20 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:10:20 AM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+jul 24, 2015 11:10:20 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+Grave: La aplicación web [] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+jul 24, 2015 11:10:20 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:10:20 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:10:20 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:10:20 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 11:10:38 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 11:10:38 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:10:38 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 789 ms
+jul 24, 2015 11:10:38 AM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 11:10:38 AM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 11:10:38 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 11:10:45 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+Información: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [287] milliseconds.
+jul 24, 2015 11:10:47 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 8.222 ms
+jul 24, 2015 11:10:47 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:10:47 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:10:47 AM org.apache.catalina.startup.Catalina start
+Información: Server startup in 8307 ms
+jul 24, 2015 11:27:22 AM org.apache.catalina.core.StandardServer await
+Información: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+jul 24, 2015 11:27:22 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:27:23 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:27:23 AM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+jul 24, 2015 11:27:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+Grave: La aplicación web [] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+jul 24, 2015 11:27:23 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:27:23 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:27:23 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:27:23 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:28:43 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 11:28:43 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 11:28:44 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:28:44 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:28:44 AM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 785 ms
+jul 24, 2015 11:28:44 AM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 11:28:44 AM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 11:28:44 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 11:28:48 AM org.apache.catalina.core.StandardContext startInternal
+Grave: Error listenerStart
+jul 24, 2015 11:28:48 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+Información: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [320] milliseconds.
+jul 24, 2015 11:28:48 AM org.apache.catalina.core.StandardContext startInternal
+Grave: Falló en arranque del Contexto [] debido a errores previos
+jul 24, 2015 11:28:48 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 4.631 ms
+jul 24, 2015 11:28:48 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:28:48 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:28:48 AM org.apache.catalina.startup.Catalina start
+Información: Server startup in 4704 ms
+jul 24, 2015 11:29:23 AM org.apache.catalina.core.StandardServer await
+Información: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+jul 24, 2015 11:29:23 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:29:23 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:29:23 AM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+jul 24, 2015 11:29:23 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:29:23 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:29:23 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:29:23 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:29:42 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 11:29:42 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 11:29:43 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:29:43 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:29:43 AM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 785 ms
+jul 24, 2015 11:29:43 AM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 11:29:43 AM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 11:29:43 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 11:29:50 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 7.606 ms
+jul 24, 2015 11:29:50 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:29:50 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:29:50 AM org.apache.catalina.startup.Catalina start
+Información: Server startup in 7677 ms
+jul 24, 2015 11:34:52 AM org.apache.catalina.core.StandardServer await
+Información: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+jul 24, 2015 11:34:52 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:34:52 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:34:52 AM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+jul 24, 2015 11:34:52 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+Grave: La aplicación web [] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+jul 24, 2015 11:34:52 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:34:52 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:34:52 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:34:52 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:35:10 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 11:35:10 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 11:35:10 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 11:35:10 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 11:35:11 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 11:35:11 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:35:11 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 783 ms
+jul 24, 2015 11:35:11 AM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 11:35:11 AM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 11:35:11 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 11:35:17 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+Información: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [275] milliseconds.
+jul 24, 2015 11:35:18 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 7.583 ms
+jul 24, 2015 11:35:18 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:35:18 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:35:18 AM org.apache.catalina.startup.Catalina start
+Información: Server startup in 7656 ms
+jul 24, 2015 11:40:04 AM org.apache.catalina.core.StandardServer await
+Información: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+jul 24, 2015 11:40:04 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:40:04 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:40:04 AM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+jul 24, 2015 11:40:04 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+Grave: La aplicación web [] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+jul 24, 2015 11:40:04 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:40:04 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:40:04 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:40:04 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 11:40:13 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 11:40:13 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:40:13 AM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 782 ms
+jul 24, 2015 11:40:13 AM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 11:40:13 AM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 11:40:13 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 11:40:20 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+Información: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [349] milliseconds.
+jul 24, 2015 11:40:21 AM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 7.819 ms
+jul 24, 2015 11:40:21 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:40:21 AM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:40:21 AM org.apache.catalina.startup.Catalina start
+Información: Server startup in 7898 ms
+jul 24, 2015 11:48:38 AM org.apache.catalina.core.StandardServer await
+Información: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+jul 24, 2015 11:48:38 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:48:38 AM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:48:39 AM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+jul 24, 2015 11:48:39 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+Grave: La aplicación web [] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+jul 24, 2015 11:48:39 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:48:39 AM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 11:48:39 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 11:48:39 AM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 12:42:36 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 12:42:36 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 12:42:36 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 12:42:36 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 12:42:36 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 12:42:36 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 12:42:36 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 12:42:36 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 12:42:36 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 12:42:36 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 12:42:36 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 12:42:36 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 12:42:36 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 12:42:36 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 12:42:36 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 12:42:36 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 12:42:36 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 12:42:37 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 12:42:37 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 12:42:37 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 12:42:37 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 12:42:37 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 12:42:37 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 12:42:37 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 12:42:37 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 12:42:37 PM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 12:42:37 PM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 12:42:37 PM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 809 ms
+jul 24, 2015 12:42:37 PM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 12:42:37 PM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 12:42:37 PM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 12:42:43 PM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+Información: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [325] milliseconds.
+jul 24, 2015 12:42:45 PM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 8.206 ms
+jul 24, 2015 12:42:45 PM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 12:42:45 PM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 12:42:45 PM org.apache.catalina.startup.Catalina start
+Información: Server startup in 8280 ms
+jul 24, 2015 12:48:26 PM org.apache.catalina.core.StandardServer await
+Información: Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+jul 24, 2015 12:48:26 PM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 12:48:26 PM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 12:48:26 PM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+jul 24, 2015 12:48:26 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+Grave: La aplicación web [] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+jul 24, 2015 12:48:26 PM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 12:48:26 PM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 12:48:26 PM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 12:48:26 PM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server version:        Apache Tomcat/7.0.57
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server built:          Nov 3 2014 08:39:16 UTC
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Server number:         7.0.57.0
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Name:               Mac OS X
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: OS Version:            10.9.5
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Architecture:          x86_64
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: JAVA_HOME:             /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Version:           1.7.0_51-b13
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: JVM Vendor:            Oracle Corporation
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_BASE:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: CATALINA_HOME:         /Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.config.file=/Users/willynx/git/infopadronpy/web/tomcat/conf/logging.properties
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dext.prop.dir=/Users/willynx/git/infopadronpy/web/tomcat/development
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dorg.apache.catalina.session.StandardSession.ACTIVITY_CHECK=true
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dlog4j.configuration=file:///Users/willynx/git/infopadronpy/web/tomcat/development/log4j.xml
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.language=es
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.region=PY
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Duser.timezone=America/Asuncion
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -agentlib:jdwp=transport=dt_socket,address=8001,server=y,suspend=n
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.endorsed.dirs=/Users/willynx/git/infopadronpy/web/tomcat/endorsed
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.base=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Dcatalina.home=/Users/willynx/git/infopadronpy/web/tomcat
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.VersionLoggerListener log
+Información: Command line argument: -Djava.io.tmpdir=/Users/willynx/git/infopadronpy/web/tomcat/temp
+jul 24, 2015 12:48:54 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /Users/willynx/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jul 24, 2015 12:48:54 PM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 12:48:54 PM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 875 ms
+jul 24, 2015 12:48:54 PM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+jul 24, 2015 12:48:54 PM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.57
+jul 24, 2015 12:48:54 PM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war de la aplicación web
+jul 24, 2015 12:49:01 PM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+Información: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [364] milliseconds.
+jul 24, 2015 12:49:02 PM org.apache.catalina.startup.HostConfig deployWAR
+Información: Deployment of web application archive /Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT.war has finished in 8.341 ms
+jul 24, 2015 12:49:02 PM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-8080"]
+jul 24, 2015 12:49:02 PM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+jul 24, 2015 12:49:02 PM org.apache.catalina.startup.Catalina start
+Información: Server startup in 8427 ms

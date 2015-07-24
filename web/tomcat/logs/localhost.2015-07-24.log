@@ -1,0 +1,867 @@
+jul 24, 2015 9:39:29 AM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 9:39:30 AM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 9:39:30 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 9:39:31 AM org.apache.catalina.core.StandardContext listenerStart
+Grave: Excepción enviando evento inicializado de contexto a instancia de escuchador de clase org.springframework.web.context.ContextLoaderListener
+org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'mailSender' defined in ServletContext resource [/WEB-INF/spring/spring-business-context.xml]: Could not resolve placeholder 'mail.host' in string value "${mail.host}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'mail.host' in string value "${mail.host}"
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.processProperties(PropertySourcesPlaceholderConfigurer.java:180)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:155)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:265)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:606)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:462)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4994)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5492)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:649)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1081)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1877)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'mail.host' in string value "${mail.host}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:204)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:178)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue(BeanDefinitionVisitor.java:282)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue(BeanDefinitionVisitor.java:204)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues(BeanDefinitionVisitor.java:141)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition(BeanDefinitionVisitor.java:82)
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:208)
+	... 22 more
+
+jul 24, 2015 9:39:31 AM org.apache.catalina.core.ApplicationContext log
+Información: Closing Spring root WebApplicationContext
+jul 24, 2015 9:39:31 AM org.apache.catalina.core.ApplicationContext log
+Información: Shutting down log4j
+jul 24, 2015 9:42:12 AM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 9:42:12 AM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 9:42:12 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 9:42:13 AM org.apache.catalina.core.StandardContext listenerStart
+Grave: Excepción enviando evento inicializado de contexto a instancia de escuchador de clase org.springframework.web.context.ContextLoaderListener
+org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'mailSender' defined in ServletContext resource [/WEB-INF/spring/spring-business-context.xml]: Could not resolve placeholder 'mail.host' in string value "${mail.host}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'mail.host' in string value "${mail.host}"
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.processProperties(PropertySourcesPlaceholderConfigurer.java:180)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:155)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:265)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:606)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:462)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4994)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5492)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:649)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1081)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1877)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'mail.host' in string value "${mail.host}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:204)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:178)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue(BeanDefinitionVisitor.java:282)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue(BeanDefinitionVisitor.java:204)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues(BeanDefinitionVisitor.java:141)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition(BeanDefinitionVisitor.java:82)
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:208)
+	... 22 more
+
+jul 24, 2015 9:42:13 AM org.apache.catalina.core.ApplicationContext log
+Información: Closing Spring root WebApplicationContext
+jul 24, 2015 9:42:13 AM org.apache.catalina.core.ApplicationContext log
+Información: Shutting down log4j
+jul 24, 2015 9:43:09 AM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 9:43:09 AM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 9:43:09 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 9:43:12 AM org.apache.catalina.core.StandardContext listenerStart
+Grave: Excepción enviando evento inicializado de contexto a instancia de escuchador de clase org.springframework.web.context.ContextLoaderListener
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.filterChains': Cannot resolve reference to bean 'org.springframework.security.web.DefaultSecurityFilterChain#2' while setting bean property 'sourceList' with key [2]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.web.DefaultSecurityFilterChain#2': Cannot create inner bean '(inner bean)#72c3acff' of type [org.springframework.security.web.authentication.logout.LogoutFilter] while setting constructor argument with key [2]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#72c3acff': Cannot resolve reference to bean 'logoutHandler' while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [py.com.sodep.agriket.security.LogoutSuccessHandler] for bean with name 'logoutHandler' defined in ServletContext resource [/WEB-INF/spring/spring-security-context.xml]; nested exception is java.lang.ClassNotFoundException: py.com.sodep.agriket.security.LogoutSuccessHandler
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList(BeanDefinitionValueResolver.java:382)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:157)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:736)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4994)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5492)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:649)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1081)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1877)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.web.DefaultSecurityFilterChain#2': Cannot create inner bean '(inner bean)#72c3acff' of type [org.springframework.security.web.authentication.logout.LogoutFilter] while setting constructor argument with key [2]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#72c3acff': Cannot resolve reference to bean 'logoutHandler' while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [py.com.sodep.agriket.security.LogoutSuccessHandler] for bean with name 'logoutHandler' defined in ServletContext resource [/WEB-INF/spring/spring-security-context.xml]; nested exception is java.lang.ClassNotFoundException: py.com.sodep.agriket.security.LogoutSuccessHandler
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:129)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList(BeanDefinitionValueResolver.java:382)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:157)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:634)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 30 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#72c3acff': Cannot resolve reference to bean 'logoutHandler' while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [py.com.sodep.agriket.security.LogoutSuccessHandler] for bean with name 'logoutHandler' defined in ServletContext resource [/WEB-INF/spring/spring-security-context.xml]; nested exception is java.lang.ClassNotFoundException: py.com.sodep.agriket.security.LogoutSuccessHandler
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:634)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299)
+	... 44 more
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [py.com.sodep.agriket.security.LogoutSuccessHandler] for bean with name 'logoutHandler' defined in ServletContext resource [/WEB-INF/spring/spring-security-context.xml]; nested exception is java.lang.ClassNotFoundException: py.com.sodep.agriket.security.LogoutSuccessHandler
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1328)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:453)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 52 more
+Caused by: java.lang.ClassNotFoundException: py.com.sodep.agriket.security.LogoutSuccessHandler
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1720)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1571)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:249)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:395)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1320)
+	... 58 more
+
+jul 24, 2015 9:43:12 AM org.apache.catalina.core.ApplicationContext log
+Información: Closing Spring root WebApplicationContext
+jul 24, 2015 9:43:12 AM org.apache.catalina.core.ApplicationContext log
+Información: Shutting down log4j
+jul 24, 2015 9:45:07 AM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 9:45:07 AM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 9:45:07 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 9:45:09 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 9:45:10 AM org.apache.catalina.core.ApplicationContext log
+Grave: StandardWrapper.Throwable
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#1': Cannot create inner bean 'py.com.infopadron.security.AuthorizationInterceptor#0' of type [py.com.infopadron.security.AuthorizationInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [py.com.infopadron.security.AuthorizationInterceptor] for bean with name 'py.com.infopadron.security.AuthorizationInterceptor#0' defined in ServletContext resource [/WEB-INF/spring/spring-web-context.xml]; nested exception is java.lang.ClassNotFoundException: py.com.infopadron.security.AuthorizationInterceptor
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:629)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:677)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:548)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1284)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1197)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1087)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5231)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5518)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:649)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1081)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1877)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#1': Cannot create inner bean 'py.com.infopadron.security.AuthorizationInterceptor#0' of type [py.com.infopadron.security.AuthorizationInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [py.com.infopadron.security.AuthorizationInterceptor] for bean with name 'py.com.infopadron.security.AuthorizationInterceptor#0' defined in ServletContext resource [/WEB-INF/spring/spring-web-context.xml]; nested exception is java.lang.ClassNotFoundException: py.com.infopadron.security.AuthorizationInterceptor
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:122)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:634)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:523)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1060)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:277)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.detectMappedInterceptors(AbstractHandlerMapping.java:221)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.initApplicationContext(AbstractHandlerMapping.java:196)
+	at org.springframework.context.support.ApplicationObjectSupport.initApplicationContext(ApplicationObjectSupport.java:120)
+	at org.springframework.web.context.support.WebApplicationObjectSupport.initApplicationContext(WebApplicationObjectSupport.java:76)
+	at org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(ApplicationObjectSupport.java:74)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:119)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:94)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:408)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1558)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	... 31 more
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [py.com.infopadron.security.AuthorizationInterceptor] for bean with name 'py.com.infopadron.security.AuthorizationInterceptor#0' defined in ServletContext resource [/WEB-INF/spring/spring-web-context.xml]; nested exception is java.lang.ClassNotFoundException: py.com.infopadron.security.AuthorizationInterceptor
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1328)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:453)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299)
+	... 55 more
+Caused by: java.lang.ClassNotFoundException: py.com.infopadron.security.AuthorizationInterceptor
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1720)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1571)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:249)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:395)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1320)
+	... 57 more
+
+jul 24, 2015 9:45:10 AM org.apache.catalina.core.StandardContext loadOnStartup
+Grave: El Servlet  lanzó excepción de load()
+java.lang.ClassNotFoundException: py.com.infopadron.security.AuthorizationInterceptor
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1720)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1571)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:249)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:395)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:453)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:122)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:634)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:523)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1060)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:277)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.detectMappedInterceptors(AbstractHandlerMapping.java:221)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.initApplicationContext(AbstractHandlerMapping.java:196)
+	at org.springframework.context.support.ApplicationObjectSupport.initApplicationContext(ApplicationObjectSupport.java:120)
+	at org.springframework.web.context.support.WebApplicationObjectSupport.initApplicationContext(WebApplicationObjectSupport.java:76)
+	at org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(ApplicationObjectSupport.java:74)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:119)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:94)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:408)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1558)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:629)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:677)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:548)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1284)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1197)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1087)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5231)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5518)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:649)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1081)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1877)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jul 24, 2015 9:46:22 AM org.apache.catalina.core.ApplicationContext log
+Información: Closing Spring root WebApplicationContext
+jul 24, 2015 9:46:22 AM org.apache.catalina.core.ApplicationContext log
+Información: Shutting down log4j
+jul 24, 2015 9:46:44 AM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 9:46:44 AM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 9:46:44 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 9:46:46 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 9:46:46 AM org.apache.catalina.core.ApplicationContext log
+Grave: StandardWrapper.Throwable
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#1': Cannot create inner bean 'py.com.infopadron.security.AuthorizationInterceptor#0' of type [py.com.infopadron.security.AuthorizationInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [py.com.infopadron.security.AuthorizationInterceptor] for bean with name 'py.com.infopadron.security.AuthorizationInterceptor#0' defined in ServletContext resource [/WEB-INF/spring/spring-web-context.xml]; nested exception is java.lang.ClassNotFoundException: py.com.infopadron.security.AuthorizationInterceptor
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:547)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:629)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:677)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:548)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1284)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1197)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1087)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5231)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5518)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:649)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1081)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1877)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#1': Cannot create inner bean 'py.com.infopadron.security.AuthorizationInterceptor#0' of type [py.com.infopadron.security.AuthorizationInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [py.com.infopadron.security.AuthorizationInterceptor] for bean with name 'py.com.infopadron.security.AuthorizationInterceptor#0' defined in ServletContext resource [/WEB-INF/spring/spring-web-context.xml]; nested exception is java.lang.ClassNotFoundException: py.com.infopadron.security.AuthorizationInterceptor
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:122)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:634)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:523)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1060)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:277)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.detectMappedInterceptors(AbstractHandlerMapping.java:221)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.initApplicationContext(AbstractHandlerMapping.java:196)
+	at org.springframework.context.support.ApplicationObjectSupport.initApplicationContext(ApplicationObjectSupport.java:120)
+	at org.springframework.web.context.support.WebApplicationObjectSupport.initApplicationContext(WebApplicationObjectSupport.java:76)
+	at org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(ApplicationObjectSupport.java:74)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:119)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:94)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:408)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1558)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	... 31 more
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [py.com.infopadron.security.AuthorizationInterceptor] for bean with name 'py.com.infopadron.security.AuthorizationInterceptor#0' defined in ServletContext resource [/WEB-INF/spring/spring-web-context.xml]; nested exception is java.lang.ClassNotFoundException: py.com.infopadron.security.AuthorizationInterceptor
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1328)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:453)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299)
+	... 55 more
+Caused by: java.lang.ClassNotFoundException: py.com.infopadron.security.AuthorizationInterceptor
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1720)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1571)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:249)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:395)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1320)
+	... 57 more
+
+jul 24, 2015 9:46:46 AM org.apache.catalina.core.StandardContext loadOnStartup
+Grave: El Servlet  lanzó excepción de load()
+java.lang.ClassNotFoundException: py.com.infopadron.security.AuthorizationInterceptor
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1720)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1571)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:249)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:395)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:453)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:122)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:634)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:523)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1060)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:277)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.detectMappedInterceptors(AbstractHandlerMapping.java:221)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.initApplicationContext(AbstractHandlerMapping.java:196)
+	at org.springframework.context.support.ApplicationObjectSupport.initApplicationContext(ApplicationObjectSupport.java:120)
+	at org.springframework.web.context.support.WebApplicationObjectSupport.initApplicationContext(WebApplicationObjectSupport.java:76)
+	at org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(ApplicationObjectSupport.java:74)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:119)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:94)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:408)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1558)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:629)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:677)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:548)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1284)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1197)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1087)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5231)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5518)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:649)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1081)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1877)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jul 24, 2015 9:48:13 AM org.apache.catalina.core.ApplicationContext log
+Información: Closing Spring root WebApplicationContext
+jul 24, 2015 9:48:13 AM org.apache.catalina.core.ApplicationContext log
+Información: Shutting down log4j
+jul 24, 2015 9:48:34 AM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 9:48:34 AM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 9:48:34 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 9:48:36 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 9:50:09 AM org.apache.catalina.core.ApplicationContext log
+Información: Destroying Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 9:50:09 AM org.apache.catalina.core.ApplicationContext log
+Información: Closing Spring root WebApplicationContext
+jul 24, 2015 9:50:09 AM org.apache.catalina.core.ApplicationContext log
+Información: Shutting down log4j
+jul 24, 2015 9:52:09 AM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 9:52:09 AM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 9:52:09 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 9:52:11 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 9:52:19 AM org.apache.catalina.core.ApplicationContext log
+Información: Destroying Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 9:52:19 AM org.apache.catalina.core.ApplicationContext log
+Información: Closing Spring root WebApplicationContext
+jul 24, 2015 9:52:19 AM org.apache.catalina.core.ApplicationContext log
+Información: Shutting down log4j
+jul 24, 2015 9:52:31 AM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 9:52:31 AM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 9:52:31 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 9:52:33 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 10:09:27 AM org.apache.catalina.core.ApplicationContext log
+Información: Destroying Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 10:09:27 AM org.apache.catalina.core.ApplicationContext log
+Información: Closing Spring root WebApplicationContext
+jul 24, 2015 10:09:27 AM org.apache.catalina.core.ApplicationContext log
+Información: Shutting down log4j
+jul 24, 2015 10:09:44 AM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 10:09:44 AM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 10:09:44 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 10:09:46 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 10:51:00 AM org.apache.catalina.core.ApplicationContext log
+Información: Destroying Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 10:51:00 AM org.apache.catalina.core.ApplicationContext log
+Información: Closing Spring root WebApplicationContext
+jul 24, 2015 10:51:00 AM org.apache.catalina.core.ApplicationContext log
+Información: Shutting down log4j
+jul 24, 2015 11:02:56 AM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 11:02:56 AM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 11:02:56 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 11:02:59 AM org.apache.catalina.core.StandardContext listenerStart
+Grave: Excepción enviando evento inicializado de contexto a instancia de escuchador de clase org.springframework.web.context.ContextLoaderListener
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authenticationServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [py.com.sodep.agriket.security.LogoutSuccessHandler] for bean with name 'logoutHandler' defined in ServletContext resource [/WEB-INF/spring/spring-security-context.xml]; nested exception is java.lang.ClassNotFoundException: py.com.sodep.agriket.security.LogoutSuccessHandler
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4994)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5492)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:649)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1081)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1877)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Injection of persistence dependencies failed; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [py.com.sodep.agriket.security.LogoutSuccessHandler] for bean with name 'logoutHandler' defined in ServletContext resource [/WEB-INF/spring/spring-security-context.xml]; nested exception is java.lang.ClassNotFoundException: py.com.sodep.agriket.security.LogoutSuccessHandler
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessPropertyValues(PersistenceAnnotationBeanPostProcessor.java:357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:461)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:435)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:559)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:169)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305)
+	... 26 more
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [py.com.sodep.agriket.security.LogoutSuccessHandler] for bean with name 'logoutHandler' defined in ServletContext resource [/WEB-INF/spring/spring-security-context.xml]; nested exception is java.lang.ClassNotFoundException: py.com.sodep.agriket.security.LogoutSuccessHandler
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1328)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:622)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:591)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:434)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:412)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:398)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:144)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findDefaultEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:562)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findEntityManagerFactory(PersistenceAnnotationBeanPostProcessor.java:531)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.resolveEntityManager(PersistenceAnnotationBeanPostProcessor.java:697)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor$PersistenceElement.getResourceToInject(PersistenceAnnotationBeanPostProcessor.java:670)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:178)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessPropertyValues(PersistenceAnnotationBeanPostProcessor.java:354)
+	... 39 more
+Caused by: java.lang.ClassNotFoundException: py.com.sodep.agriket.security.LogoutSuccessHandler
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1720)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1571)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:249)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:395)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1320)
+	... 53 more
+
+jul 24, 2015 11:02:59 AM org.apache.catalina.core.ApplicationContext log
+Información: Closing Spring root WebApplicationContext
+jul 24, 2015 11:02:59 AM org.apache.catalina.core.ApplicationContext log
+Información: Shutting down log4j
+jul 24, 2015 11:04:57 AM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 11:04:57 AM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 11:04:57 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 11:05:01 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 11:10:20 AM org.apache.catalina.core.ApplicationContext log
+Información: Destroying Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 11:10:20 AM org.apache.catalina.core.ApplicationContext log
+Información: Closing Spring root WebApplicationContext
+jul 24, 2015 11:10:20 AM org.apache.catalina.core.StandardContext listenerStop
+Grave: Excepción enviando evento de contexto destruído a instancia de escuchador de clase org.springframework.web.context.ContextLoaderListener
+java.lang.NoClassDefFoundError: org/springframework/web/context/ContextCleanupListener
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:116)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:5035)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5687)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1591)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1580)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.context.ContextCleanupListener
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1720)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1571)
+	... 10 more
+
+jul 24, 2015 11:10:20 AM org.apache.catalina.core.ApplicationContext log
+Información: Shutting down log4j
+jul 24, 2015 11:10:20 AM org.apache.catalina.core.StandardContext listenerStop
+Grave: Excepción enviando evento de contexto destruído a instancia de escuchador de clase org.springframework.web.util.Log4jConfigListener
+java.lang.NoClassDefFoundError: org/springframework/util/Log4jConfigurer
+	at org.springframework.web.util.Log4jWebConfigurer.shutdownLogging(Log4jWebConfigurer.java:170)
+	at org.springframework.web.util.Log4jConfigListener.contextDestroyed(Log4jConfigListener.java:51)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:5035)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5687)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1591)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1580)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.lang.ClassNotFoundException: org.springframework.util.Log4jConfigurer
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1720)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1571)
+	... 11 more
+
+jul 24, 2015 11:10:41 AM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 11:10:41 AM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 11:10:41 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 11:10:45 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 11:27:23 AM org.apache.catalina.core.ApplicationContext log
+Información: Destroying Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 11:27:23 AM org.apache.catalina.core.ApplicationContext log
+Información: Closing Spring root WebApplicationContext
+jul 24, 2015 11:27:23 AM org.apache.catalina.core.ApplicationContext log
+Información: Shutting down log4j
+jul 24, 2015 11:28:47 AM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 11:28:47 AM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 11:28:47 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 11:28:48 AM org.apache.catalina.core.StandardContext listenerStart
+Grave: Excepción enviando evento inicializado de contexto a instancia de escuchador de clase org.springframework.web.context.ContextLoaderListener
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myEmf' defined in ServletContext resource [/WEB-INF/spring/spring-business-context.xml]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: No persistence unit with name 'infopadron' found
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1566)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:956)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:747)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4994)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5492)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:649)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1081)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1877)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.lang.IllegalArgumentException: No persistence unit with name 'infopadron' found
+	at org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager.obtainPersistenceUnitInfo(DefaultPersistenceUnitManager.java:685)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.determinePersistenceUnitInfo(LocalContainerEntityManagerFactoryBean.java:362)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:314)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1625)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1562)
+	... 25 more
+
+jul 24, 2015 11:28:48 AM org.apache.catalina.core.ApplicationContext log
+Información: Closing Spring root WebApplicationContext
+jul 24, 2015 11:28:48 AM org.apache.catalina.core.ApplicationContext log
+Información: Shutting down log4j
+jul 24, 2015 11:29:46 AM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 11:29:46 AM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 11:29:46 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 11:29:49 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 11:34:52 AM org.apache.catalina.core.ApplicationContext log
+Información: Destroying Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 11:34:52 AM org.apache.catalina.core.ApplicationContext log
+Información: Closing Spring root WebApplicationContext
+jul 24, 2015 11:34:52 AM org.apache.catalina.core.ApplicationContext log
+Información: Shutting down log4j
+jul 24, 2015 11:35:14 AM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 11:35:14 AM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 11:35:14 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 11:35:17 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 11:40:04 AM org.apache.catalina.core.ApplicationContext log
+Información: Destroying Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 11:40:04 AM org.apache.catalina.core.ApplicationContext log
+Información: Closing Spring root WebApplicationContext
+jul 24, 2015 11:40:04 AM org.apache.catalina.core.ApplicationContext log
+Información: Shutting down log4j
+jul 24, 2015 11:40:16 AM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 11:40:16 AM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 11:40:16 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 11:40:20 AM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 11:40:40 AM org.apache.catalina.core.StandardWrapperValve invoke
+Grave: El Servlet.service() para el servlet [mvc-dispatcher] en el contexto con ruta [] lanzó la excepción [Request processing failed; nested exception is java.lang.NullPointerException] con causa raíz
+java.lang.NullPointerException
+	at py.com.infopadron.controller.ANRController.parseXML(ANRController.java:121)
+	at py.com.infopadron.controller.ANRController.request(ANRController.java:77)
+	at py.com.infopadron.web.UnifiedQuery.getAfiliations(UnifiedQuery.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:777)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:706)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:877)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:857)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:186)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:503)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:744)
+
+jul 24, 2015 11:48:39 AM org.apache.catalina.core.ApplicationContext log
+Información: Destroying Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 11:48:39 AM org.apache.catalina.core.ApplicationContext log
+Información: Closing Spring root WebApplicationContext
+jul 24, 2015 11:48:39 AM org.apache.catalina.core.ApplicationContext log
+Información: Shutting down log4j
+jul 24, 2015 12:42:40 PM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 12:42:40 PM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 12:42:40 PM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 12:42:44 PM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 12:48:26 PM org.apache.catalina.core.ApplicationContext log
+Información: Destroying Spring FrameworkServlet 'mvc-dispatcher'
+jul 24, 2015 12:48:26 PM org.apache.catalina.core.ApplicationContext log
+Información: Closing Spring root WebApplicationContext
+jul 24, 2015 12:48:26 PM org.apache.catalina.core.ApplicationContext log
+Información: Shutting down log4j
+jul 24, 2015 12:48:57 PM org.apache.catalina.core.ApplicationContext log
+Información: No Spring WebApplicationInitializer types detected on classpath
+jul 24, 2015 12:48:57 PM org.apache.catalina.core.ApplicationContext log
+Información: Set web app root system property: 'webapp.root' = [/Users/willynx/git/infopadronpy/web/tomcat/webapps/ROOT/]
+jul 24, 2015 12:48:57 PM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring root WebApplicationContext
+jul 24, 2015 12:49:01 PM org.apache.catalina.core.ApplicationContext log
+Información: Initializing Spring FrameworkServlet 'mvc-dispatcher'

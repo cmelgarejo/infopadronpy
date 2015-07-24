@@ -29,10 +29,10 @@ import com.google.gson.JsonParser;
 
 public class PLRAController {
 	private static final Logger Logger = LoggerFactory
-			.getLogger(SmsController.class);
+			.getLogger(PLRAController.class);
 
 
-	public Gson request(String cedula){
+	public Afiliation request(String cedula){
 		String ApiUrl = "http://190.128.194.162/ws/rcp/consulta.php?cc="+cedula+"&op=1";
 		HttpPost post = new HttpPost(ApiUrl);
 		HttpClient httpclient = null;
@@ -75,17 +75,17 @@ public class PLRAController {
 		} finally {
 			httpclient.getConnectionManager().shutdown();
 		}
-		Gson gson=null;
+		Afiliation afiliation = new Afiliation();
 		System.out.println(response);
 		// Parsear 
 		if(response.indexOf("-1")>-1){
 			System.out.println("no esta afiliado");
 			
 		}else{
-			gson = parseArray(response);
+			afiliation = parseArray(response);
 		}
 		 
-		return gson;
+		return afiliation;
 	}
 	public static StringBuffer removeUTFCharacters(String data){
 		Pattern p = Pattern.compile("\\\\u(\\p{XDigit}{4})");
@@ -99,22 +99,9 @@ public class PLRAController {
 		return buf;
 		}
 
-	public Gson parseArray(String array){
+	public Afiliation parseArray(String array){
 		//["2265485","BERNARDA ANASTASIA","OVELAR","CAACUPE","ESC GRAD N\u00c2\u00ba40 TTE JOSE MARIA FARI\u00c3\u0091A","19","21"]
 		System.out.println("array: "+array);
-//		String regexpStr = "[\"0-9a-zA-Z\"+,\\s*(\"0-9a-zA-Z\"+),\\s*(\"0-9a-zA-Z\"+),\\s*(\"0-9a-zA-Z\"+),\\s*(\"0-9a-zA-Z\"+),\\s*(\"0-9a-zA-Z\"+),\"0-9a-zA-Z\"]";
-//		    String inputData = "[11, john,][23, Adam,][88, Angie,]";
-//
-//		    Pattern regexp = Pattern.compile(regexpStr);
-//		    Matcher matcher = regexp.matcher(array);
-//		    while (matcher.find()) {
-//		        MatchResult result = matcher.toMatchResult();
-//		        String id = result.group(0);
-//		        //String name = result.group(1);
-//		        System.out.println("id: "+id);
-//		        //System.out.println("id: "+id+" name: "+name);
-//		    }
-//		
 		
 		String [] cortado = array.split(",");
 		System.out.println(cortado[0].replace("\"", "").replace("[", ""));
@@ -141,7 +128,7 @@ public class PLRAController {
 		System.out.println(afiliation.toString());
 		
 		
-		return null;
+		return afiliation;
 		
 		
 	}

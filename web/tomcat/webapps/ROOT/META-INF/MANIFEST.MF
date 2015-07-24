@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Built-By: willynx
+Build-Jdk: 1.7.0_51
+Created-By: Apache Maven 3.2.5
+version: 0.0.1-SNAPSHOT
+Archiver-Version: Plexus Archiver
+

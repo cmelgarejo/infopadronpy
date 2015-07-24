@@ -32,7 +32,7 @@ import com.google.gson.JsonParser;
 
 public class RCPController {
 	private static final Logger Logger = LoggerFactory
-			.getLogger(SmsController.class);
+			.getLogger(RCPController.class);
 
 
 	public void request(String cedula,String fechanacimiento){
@@ -73,9 +73,6 @@ public class RCPController {
 					(httpresponse.getEntity().getContent())));
 			String output = "";
 			
-
-			
-			System.out.println("Output from Server .... \n");
 			while ((output = br.readLine()) != null) {
 				System.out.println(output);
 				response += output;
@@ -93,6 +90,8 @@ public class RCPController {
 		} finally {
 			httpclient.getConnectionManager().shutdown();
 		}
+		
+		
 	}
 	public static void main(String[] args) {
 		RCPController anrctrl = new RCPController();

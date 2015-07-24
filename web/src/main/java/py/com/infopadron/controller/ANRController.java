@@ -41,7 +41,7 @@ public class ANRController {
 	private static final String ApiUser = "";
 	private static final String ApiPass = "";
 
-	public Gson request(String cedula) {
+	public Afiliation request(String cedula) {
 		HttpPost post = new HttpPost(ApiUrl);
 		HttpClient httpclient = null;
 		HttpResponse httpresponse = null;
@@ -74,7 +74,7 @@ public class ANRController {
 				System.out.println(output);
 				response += output;
 			}
-			parseXML(response);
+			
 
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
@@ -88,20 +88,21 @@ public class ANRController {
 		} finally {
 			httpclient.getConnectionManager().shutdown();
 		}
-		Gson gson=null;
+		Afiliation afiliation = new Afiliation();
 		// Parsear 
-		if(response.indexOf("")>-1){
-			gson = parseXML(response);
+		if(response.indexOf("ci")>-1){
+			afiliation = parseXML(response);
 		}
 		 
-		return gson;
+		return afiliation;
 	}
 
-	public Gson parseXML(String xml) {
+	public Afiliation parseXML(String xml) {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder;
 		InputSource is;
 		Gson gson = new Gson();
+		Afiliation afiliation = new Afiliation();
 		try {
 			builder = factory.newDocumentBuilder();
 			is = new InputSource(new StringReader(xml));
@@ -117,29 +118,28 @@ public class ANRController {
 			NodeList listMesa= doc.getElementsByTagName("mesa");
 			NodeList listOrden= doc.getElementsByTagName("orden");
 			
-			Afiliation afiliation = new Afiliation();
+			
 			afiliation.setCi(""+listCi.item(0).getTextContent());
 			afiliation.setNombre_completo(""+listNombre.item(0).getTextContent()+" "+listApellido.item(0).getTextContent());
 			afiliation.setPartido("ANR");
 			afiliation.setLugar_votacion("Local: "+listLocal.item(0).getTextContent()+" Seccional: "+listSeccional.item(0).getTextContent()+" Distrito"+listDistrito.item(0).getTextContent()+" Zona: " +listZona.item(0).getTextContent()+" Dpto: "+listDpto.item(0).getTextContent());
 			afiliation.setMesa(""+listMesa.item(0).getTextContent());
 			afiliation.setOrden(""+listOrden.item(0).getTextContent());
-			System.out.println(afiliation.toString());
-			
-			gson.toJson(afiliation);
-			System.out.println(listCi.item(0).getTextContent());
+			//System.out.println(afiliation.toString());
+
 		} catch (ParserConfigurationException e) {
 		} catch (SAXException e) {
 		} catch (IOException e) {
 		}
-		return gson;
+		return afiliation;
 	}
 
 	public static void main(String[] args) {
 		ANRController anrCtrl = new ANRController();
-		String cedula = "4942823";// DJALMA
-		//String cedula = "9999999";
-		Gson gson = anrCtrl.request(cedula);
+		//String cedula = "4942823";// DJALMA
+		String cedula = "9999999";
+		Afiliation afiliation = anrCtrl.request(cedula);
+		System.out.println(afiliation.toString());
 
 	}
 
