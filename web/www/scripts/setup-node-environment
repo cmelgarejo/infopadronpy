@@ -1,0 +1,8 @@
+#!/bin/bash -x
+
+#!/bin/bash -x
+
+
+npm install -g grunt-cli@0.1.13 grunt@0.4.5
+npm install -g minifyify@3.0.12 jstify@0.2.0 browserify-shim@3.7.0 watchify@0.10.2 browserify@4.2.3
+npm install

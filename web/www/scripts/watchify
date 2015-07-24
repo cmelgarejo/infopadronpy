@@ -1,0 +1,9 @@
+#!/bin/bash
+
+JSDIR=dev/js
+
+if [ ! -d $JSDIR ]; then
+   mkdir -p $JSDIR
+fi
+
+watchify main.js -t jstify --debug -o $JSDIR/dev-bundle.js -v

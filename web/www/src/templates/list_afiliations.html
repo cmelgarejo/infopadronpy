@@ -1,0 +1,117 @@
+<div class="container">
+	<div id="topRow" class="row">
+		<div class="col-sm-offset-3 col-md-2">
+			<span class="page-location">Subastas</span> <span class="yellow-icon">/</span>
+		</div>
+		<div class="col-md-4 col-sm-offset-3 text-right">
+			<span id="orderByBar"> <span>Ordenado por:&nbsp;</span>
+				<div class="btn-group">
+					<button class="btn btn-default dropdown-toggle"
+						type="button" data-toggle="dropdown">
+						<span id="currentSortText" class="current-sort-text">Más
+							recientes </span>
+							<span class="caret"></span> 
+					</button>
+					<ul class="dropdown-menu pull-right">
+						<li><a id="sortByStartDateDesc">Más recientes</a></li>
+						<li><a id="sortByEndDateAsc">Próximos a expirar</a></li>
+						<li><a id="sortByFavoritesAsc">Favoritas</a></li>
+					</ul>
+				</div>
+			</span>
+		</div>
+	</div>
+	<br />
+
+	<div class="row">
+		<div class="col-md-3 auctions-filter">
+			<span class="auctions-filter-header">FILTROS</span>
+
+			<div class="auction-filter-body">
+				<div id="qualityFilterGroup" class="auction-filter-item">
+					<label class="control-label">Calidad</label>
+
+					<div class="checkbox">
+						<label> <input type="checkbox" value="2"
+							name="qualityCheckboxes" checked>&nbsp;Grado 2
+						</label>
+					</div>
+					<div class="checkbox">
+						<label> <input type="checkbox" value="3"
+							name="qualityCheckboxes" checked>&nbsp;De segunda
+						</label>
+					</div>
+				</div>
+				<div id="volumeFilterGroup" class="auction-filter-item">
+					<label class="control-label">Volumen</label>
+
+					<div class="checkbox">
+						<label> <input type="checkbox" value="lt100"
+							name="volumeCheckboxes" checked>&nbsp;Menos de 100 Tn
+						</label>
+					</div>
+					<div class="checkbox">
+						<label> <input type="checkbox" value="bw100n500"
+							name="volumeCheckboxes" checked>&nbsp;Entre 100 y 500 Tn
+						</label>
+					</div>
+					<div class="checkbox">
+						<label> <input type="checkbox" value="gt500"
+							name="volumeCheckboxes" checked>&nbsp;Mas de 500 Tn
+						</label>
+					</div>
+				</div>
+				<div id="stateFilterGroup" class="auction-filter-item">
+					<label class="control-label">Estado</label>
+
+					<div class="checkbox">
+						<label> <input type="checkbox" value="active"
+							name="stateCheckboxes" checked>&nbsp;Activos
+						</label>
+					</div>
+					<div class="checkbox">
+						<label> <input type="checkbox" value="done"
+							name="stateCheckboxes">&nbsp;Concretados
+						</label>
+					</div>
+				</div>
+				
+				<div id="ownersFilterGroup" class="auction-filter-item">
+					<label class="control-label">Subastas</label>
+
+					<div class="checkbox">
+						<label> <input type="checkbox" value="all" name="ownerCheckboxes" checked>&nbsp;Todas</label>
+					</div>
+					<div class="checkbox">
+						<label> <input type="checkbox" value="mine" name="ownerCheckboxes">&nbsp;Mías</label>
+					</div>
+				</div>
+
+				<button id="filterButton"
+					class="btn btn-primary aplly-filter-button">APLICAR FILTRO
+				</button>
+
+			</div>
+
+		</div>
+
+		<table class="col-md-9" id="rauctions_list">
+
+		</table>
+
+		<div class="col-md-offset-3" id="paginationBar">
+			<span class="col-md-offset-0" style="display: none;"> <span
+				class="fa fa-angle-double-left"></span>&nbsp;<a
+				id="previousPageLink" href="#">Anterior</a>
+			</span> <span class="col-md-offset-10" style="display: none;"> <a
+				id="nextPageLink" href="#">Siguiente</a>&nbsp;<span
+				class="fa fa-angle-double-right"></span>
+			</span>
+		</div>
+
+	</div>
+
+</div>
+
+
+

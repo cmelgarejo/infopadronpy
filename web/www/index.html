@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- build:css:prod /app/css/app.min.css -->
+<link rel="stylesheet" href="/dev/css/bootstrap.min.css">
+<link rel="stylesheet" href="/dev/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="/dev/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/dev/css/jquery-ui.css">
+<link rel="stylesheet" href="/dev/css/bootstrap-datetimepicker.css">
+<link rel="stylesheet" href="/dev/css/multi-select.css">
+<link rel="stylesheet" href="/dev/css/tooltip.css">
+<link rel="stylesheet" href="/dev/css/yellow.css">
+<link rel="stylesheet" href="/dev/css/agriket-general.css">
+<!-- /build -->
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="icon" href="/app/imgs/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/app/imgs/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<div id="loading-mask">
+		<table id="loading-table">
+			<tr>
+				<td id="loading-logo">
+					<!-- build:[src]:prod /app/imgs/ --> 
+					<img style=" position: absolute; margin:195px auto;top: 0;left: 0;right: 0;bottom: 0;" src="/dev/imgs/logo.png" />
+					<!-- /build -->
+				</td>
+			</tr>
+			<tr>
+				<td id="loading-icon">Cargando la aplicación <!-- build:[src]:prod /app/imgs/ -->
+					
+					<img style=" position: absolute; margin:10px auto;top: 0;left: 0;right: 0;bottom: 0; src="/dev/imgs/loading.gif" /></td>
+				<!-- /build -->
+			</tr>
+		</table>
+	</div>
+
+	<div class="container">
+		<div id="main-region" class="row"></div>
+	</div>
+
+	<div id="footer" class="footer"></div>
+
+
+	<div class="modal fade" id="modalErrorDiv">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div id="modalErrorHeader" class="modal-header">
+					<h4 class="modal-title" id="modalErrorTitle"></h4>
+				</div>
+				<div id="modalErrorMsg" class="modal-body"></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"
+						id="modalErrorGoToLoginButton" style="display: none">Ir a
+						login</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal"
+						id="modalErrorCloseButton" style="display: none">Aceptar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- build:js:prod /app/js/prod-bundle.min.js -->
+	<script src="/dev/js/dev-bundle.js"></script>
+	<!-- /build -->
+
+</body>
+
+</html>

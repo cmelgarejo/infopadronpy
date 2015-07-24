@@ -1,0 +1,36 @@
+#!/bin/bash -e
+
+# Check if npm is installed
+type npm >/dev/null 2>&1 || { echo >&2 "I require 'npm' but it's not installed.  Aborting."; exit 1; }
+
+# Check if browserify is installed
+type browserify >/dev/null 2>&1
+_RET=$?
+if [ "$_RET" -ne 0 ]; then
+    echo "=> Browserify not installed. Installing it now"
+    npm install -g browserify minifyify jstify
+fi
+
+echo "[npm] Install missing NPM packages"
+npm install
+
+# Generate the distribution bundle
+
+DIST=adm
+
+if [ ! -d $DIST ]; then
+    mkdir -p ${DIST}/js
+fi
+
+echo "[Grunt] Create production structure"
+grunt adm
+
+echo "[Browserify] Create JS app bundle"
+browserify main.js \
+    -t jstify \
+    -p \[minifyify --map adm-bundle.min.map --output adm/js/adm-bundle.min.map \] \
+    --debug \
+    -o adm/js/adm-bundle.min.js
+
+echo "[gzip] Creating gzip for JS app bundle"
+cat $DIST/js/adm-bundle.min.js | gzip > $DIST/js/adm-bundle.min.js.gz

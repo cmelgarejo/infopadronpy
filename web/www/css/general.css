@@ -1,0 +1,1620 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+img{
+	margin: 0;
+	padding: 0;
+	border: 0;
+    float: left;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+/*http://getbootstrap.com/components/#navbar-fixed-top*/
+#outermostContainer {
+	
+}
+
+/**
+Selectors that can be used in several page
+**/
+.pageTitle {
+	border-bottom: 1pt rgb(204, 204, 204) solid;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+/***
+This is a pure CSS technique to create fixed header for the table.
+http://tjvantoll.com/2012/11/10/creating-cross-browser-scrollable-tbody/
+TODO this table won't look well on IE < 10 because of a known problem (see the aforementioned link)
+**/
+.backgrid tbody {
+	display: block;
+	overflow: auto;
+	width: 100%;
+}
+
+.backgrid thead {
+	position: relative;
+	display: block;
+}
+
+.backgrid tr:hover {
+	background-color: lightyellow;
+}
+
+.selectedRow {
+	background-color: lightyellow;
+}
+
+/*
+Selectors for the page of sale_offer_list_view
+*/
+#div_for_month_filter {
+	margin-bottom: 5px;
+}
+
+.monthFilter {
+	cursor: pointer;
+}
+
+.monthFilter_selected {
+	
+}
+
+
+#div_for_salesOffer {
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+#div_for_month_filter {
+	margin: 0 auto;
+}
+
+#div_for_month_filter a, #div_for_month_filter a .badge {
+	font-size: 10px;
+}
+
+#div_for_salesOffer table {
+	/*margin: 0 auto;*/
+	width: 940px;
+	border: 1pt solid rgb(204, 204, 204);
+}
+
+#div_for_salesOffer tbody {
+	height: 182px;
+}
+
+#div_for_salesOffer .old_ie_wrapper {
+	height: 182px;
+	overflow: auto;
+}
+
+#div_for_salesOffer .old_ie_wrapper tbody {
+	height: auto;
+}
+
+.selectedMonth {
+	background-color: lightgoldenrodyellow;
+}
+
+/* !!!IMPORTANT!!!: The following rules for div_for_salesOffer are messing with the datetimepicker */
+/* That's the reason they where commented */
+
+/****/
+/*Define the width for every cell. Otherwise the CSS hack to have a fixed header wouldn't work*/
+/***/
+/*#div_for_salesOffer td:nth-child(1), th:nth-child(1) { width: 30px; min-width: 30px;}*/
+/*#div_for_salesOffer td:nth-child(2), th:nth-child(2) { width: 160px; min-width: 160px;}*/
+/*#div_for_salesOffer td:nth-child(3), th:nth-child(3) { width: 50px; min-width: 50px;}*/
+/*#div_for_salesOffer td:nth-child(4), th:nth-child(4) { width: 100px; min-width: 100px;}*/
+/*#div_for_salesOffer td:nth-child(5), th:nth-child(5) { width: 100px; min-width: 100px;}*/
+/*#div_for_salesOffer td:nth-child(6), th:nth-child(6) { width: 100px; min-width: 100px;}*/
+/*#div_for_salesOffer td:nth-child(7), th:nth-child(7) { width: 200px; min-width: 200px;}*/
+/*#div_for_salesOffer td:nth-child(8), th:nth-child(8) { width: 200px; }*/
+/*#div_for_salesOffer_details{*/
+/*margin-top: 10px;*/
+/*}*/
+
+/***/
+/*section of the history page*/
+/***/
+
+/*#div_for_transactions table{*/
+/*margin: 0 auto;*/
+/*width: 590px;*/
+/*border: 1pt solid rgb(204,204,204) ;*/
+/*}*/
+/*#div_for_transactions tbody{*/
+/*height: 282px;*/
+/*}*/
+/*#div_for_transactions .old_ie_wrapper { height: 282px; overflow: auto; }*/
+/*#div_for_transactions .old_ie_wrapper tbody { height: auto; }*/
+
+/*.selectedMonth{*/
+/*background-color: lightgoldenrodyellow;*/
+/*}*/
+/****/
+/*Define the width for every cell. Otherwise the CSS hack to have a fixed header wouldn't work*/
+/***/
+/*#div_for_transactions td:nth-child(1), th:nth-child(1) { width: 30px; min-width: 30px;}*/
+/*#div_for_transactions td:nth-child(2), th:nth-child(2) { width: 160px; min-width: 160px;}*/
+/*#div_for_transactions td:nth-child(3), th:nth-child(3) { width: 100px; min-width: 100px;}*/
+/*#div_for_transactions td:nth-child(4), th:nth-child(4) { width: 100px; min-width: 100px;}*/
+/*#div_for_transactions td:nth-child(5), th:nth-child(5) { width: 100px; min-width: 100px;}*/
+/*#div_for_transactions td:nth-child(6), th:nth-child(6) { width: 100px; }*/
+
+/* */
+/*#bidList table{*/
+/*margin: 0 auto;*/
+/*width: 726px;*/
+/*border: 1pt solid rgb(204,204,204) ;*/
+/*}*/
+/*#bidList tbody{*/
+/*height: 282px;*/
+/*}*/
+/*#bidList .old_ie_wrapper { height: 282px; overflow: auto; }*/
+/*#bidList .old_ie_wrapper tbody { height: auto; }*/
+
+/****/
+/*Define the width for every cell. Otherwise the CSS hack to have a fixed header wouldn't work*/
+/***/
+/*#bidList td:nth-child(1), th:nth-child(1) { width: 106px; min-width: 106px;}*/
+/*#bidList td:nth-child(2), th:nth-child(2) { width: 140px; min-width: 140px;}*/
+/*#bidList td:nth-child(3), th:nth-child(3) { width: 140px; min-width: 140px;}*/
+/*#bidList td:nth-child(4), th:nth-child(4) { width: 140px; min-width: 140px;}*/
+/*#bidList td:nth-child(5), th:nth-child(5) { width: 200px; }*/
+
+/* General */
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #F4F4F4;
+	font-family: "Roboto";
+}
+
+a {
+	font-family: "Roboto";
+	font-size: 13pt;
+	font-style: normal;
+	text-decoration: none;
+	color: #618C21;
+}
+
+/* */
+
+/* Generic */
+.side-icon {
+	color: #EFBF00;
+	display: inline-block;
+}
+
+.button-default {
+	position: relative;
+	vertical-align: top;
+	/*    width: 107px;*/
+	height: 45px;
+	padding: 0px 5px 0px 5px;
+	font-family: "Roboto";
+	font-size: 11pt;
+	font-style: normal;
+	color: white;
+	text-align: center;
+	/*    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);*/
+	background: #8FC200;
+	border: 0;
+	cursor: pointer;
+	border-radius: 2px;
+}
+
+.button-login {
+	width: 107px;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.button-default:active {
+	top: 1px;
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.text-input {
+	border: solid 1px #DDDDDD;
+	height: 38px;
+	font-family: "Roboto";
+	font-size: 12pt;
+	font-style: normal;
+	color: #666666;
+	padding-left: 5px;
+}
+
+/* Specific */
+.main-bar {
+	background-color: #FFFFFF;
+	/*    height: 62px;*/
+	/*    height: 82px;*/
+	border-bottom: solid #F0D600 2px;
+}
+
+.main-bar-logo {
+	/*margin-left: 45px;*/
+	margin-top: 5px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.main-bar-buttons {
+	text-align: center;
+}
+
+/* Specific: Login */
+.login-top-bar {
+	height: 28px;
+	background-color: #5e8c33
+}
+
+.main-logo-big {
+	padding: 60px 5px 50px 5px;
+	text-align: center;
+}
+
+.login-box {
+	background-color: #FFFFFF;
+	height: 345px;
+	width: 682px;
+	/* To center the element */
+	margin: 0 auto;
+	position: relative;
+	z-index: 0;
+}
+
+.login-box-header {
+	height: 88px;
+	/*Remove this*/
+	/*    background-color: lightgray;*/
+}
+
+.login-box-icon {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	color: #EFBF00;
+}
+
+.login-box-title {
+	/*    padding: 48px 5px 8px 5px;*/
+	position: absolute;
+	top: 48px;
+	left: 81px;
+	font-family: "Roboto";
+	font-size: 20pt;
+	font-style: normal;
+	color: #666666;
+}
+
+.login-box-title-underline {
+	border-bottom: solid #F0D600 1px;
+	height: 88px;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.login-box-form {
+	padding-top: 12px;
+}
+
+.login-box-form .field-label {
+	text-align: right;
+	/*    vertical-align: middle;*/
+	width: 180px;
+	float: left;
+	color: #666666;
+	font-family: "Roboto";
+	font-size: 14pt;
+	font-style: normal;
+	padding-right: 22px;
+	padding-top: 10px;
+}
+
+.login-box-form p {
+	clear: both;
+	padding: 5px;
+}
+
+.login-box-button-container {
+	padding: 10px;
+	text-align: center;
+}
+
+.login-box-text-input {
+	width: 322px;
+}
+
+.white-glow {
+	z-index: -1;
+	background-color: white;
+	top: -20px;
+	left: 550px;
+	box-shadow: 0 0 60px 30px #fff, 0 0 90px 50px #fff, 0 0 260px 100px #fff;
+	border-radius: 100%;
+	height: 150px;
+	width: 150px;
+	/*    display: flex;*/
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.login-footer {
+	position: relative;
+	top: 265px;
+}
+
+.login-footer a {
+	padding: 0px 10px 0px 10px;
+	font-size: 10pt;
+}
+
+.footer {
+	background-color: #FFFFFF;
+	height: 215px;
+	position: relative;
+	top: 100px;
+	border-top: solid #F0D600 2px;
+	text-align: center;
+	z-index: -1;
+}
+
+.footer-box {
+	text-align: left;
+	position: relative;
+	width: 300px;
+	font-family: "Roboto";
+	font-style: normal;
+	font-size: 10pt;
+	vertical-align: top;
+	color: #666666;
+	padding: 20px 10px 10px 10px;
+	display: inline-block;
+}
+
+.footer-box-title {
+	font-size: 15pt;
+	color: #628C19;
+	padding: 10px 0px 0px 0px;
+}
+
+.footer-box p {
+	padding: 0px;
+}
+
+.main-bar-options {
+	display: inline-block;
+	z-index: 1;
+}
+
+.my-account-button {
+	font-family: "Roboto";
+	font-style: normal;
+	font-size: 12pt;
+	color: #666666;
+	border-radius: 2px;
+	border: solid thin #CCCCCC;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.main-bar-current-user {
+	font-family: "Roboto";
+	font-style: normal;
+	font-size: 12pt;
+	margin-top: 3px;
+}
+
+/*Bootstrap changes*/
+
+/*Change dropdown caret to yellow */
+.caret {
+	width: 0;
+	height: 0;
+	display: inline-block;
+	content: "&uarr;&darr;";
+	text-indent: -99999px;
+	vertical-align: top;
+	margin-top: 8px;
+	margin-left: 4px;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid #F0D600;
+}
+.btn-primary-nro, .btn-primary.active {
+/* 	padding: 10px 10px 10px 10px; */
+	font-family: "Roboto";
+	font-size: 11pt;
+	font-style: normal;
+	color: white;
+	background: #F0D600;
+	border: 0;
+	border-radius: 2px;
+}
+.btn-primary-detail, .btn-primary-detail.active {
+/* 	padding: 10px 10px 10px 10px; */
+	font-family: "Roboto";
+	font-size: 11pt;
+	font-style: normal;
+	color: white;
+	background: #8CC119;
+	border: 0;
+	border-radius: 2px;
+}
+.btn-primary-detail:hover, .btn-primary-detail:focus {
+	background: #8CC119;
+	color: white;
+	border: 0;
+}
+.btn-primary, .btn-primary.active {
+	padding: 10px 10px 10px 10px;
+	font-family: "Roboto";
+	font-size: 11pt;
+	font-style: normal;
+	color: white;
+	background: #8CC119;
+	border: 0;
+	border-radius: 2px;
+}
+
+.btn-primary-demo, .btn-primary-demo.active {
+	padding: 10px 10px 10px 10px;
+	font-family: "Roboto";
+	font-size: 11pt;
+	font-style: normal;
+	color: white;
+	background: gray;
+	border: 0;
+	border-radius: 2px;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+	background: #80AE1D;
+	border: 0;
+}
+.btn-favorite{
+	
+}
+.urlImg { 
+	display:inline;
+	width: 21px; 
+	height:40px;
+	border:0; 
+	background-image: url('/app/imgs/star-yellow.png'); 
+	} 
+.urlImg2 { 
+	display:inline;
+	width: 21px; 
+	height:40px;
+	border:0; 
+
+	background-image: url('/app/imgs/star-white.png'); 
+	} 
+/* .urlImg2:hover {  */
+/* 	border:0;  */
+/* 	background-image: url('/app/imgs/star-yellow.png');  */
+/* 	}  */
+/* .urlImg:hover {  */
+/* 	border:0;  */
+/* 	background-image: url('/app/imgs/star-white.png');  */
+/* 	}  */
+
+.moneyUnit{
+	padding-left: 0px; font-size: 1em;
+}
+
+.labelText{
+	text-align:right;
+	padding-left: 0px; font-size: 1em;
+}
+.btn-primary-offer, .btn-primary-offer.active {
+	padding: 10px 10px 10px 10px;
+	font-family: "Roboto";
+	font-size: 11pt;
+	font-style: normal;
+	color: #FFF;
+	background: #8CC119;
+	border: 0;
+	border-radius: 2px;
+}
+
+.btn-primary-offer:hover, .btn-primary-offer:focus {
+	background: #80AE1D;
+	border: 0;
+	color:#FFF;
+}
+.input-offer{
+	color: #000000; 
+	text-align: center; 
+	valign: middle; 
+	border: solid 1px #dcdcdc; 
+	transition: box-shadow 0.3s, border 0.3s;
+}
+.input-offer-price{
+	background:#e9e9e9;
+	color: #000000; 
+	text-align: center; 
+	valign: middle; 
+	border: solid 1px #bcbcbc; 
+	transition: box-shadow 0.3s, border 0.3s;
+}
+.add-auction-button {
+	/*
+    margin-left: 30px;
+    margin-right: 30px;
+*/
+	
+}
+
+.send-auction-button {
+	/*
+    margin-left: 30px;
+    margin-right: 30px;
+*/
+	background-color: #618D18;
+}
+
+.main-menu {
+	/*color: red;*/
+	
+}
+
+.auctions-filter {
+	/*    width: 175px;*/
+	height: 550px;
+	color: #FFFFFF;
+	font-family: "Roboto";
+	font-size: 14pt;
+	font-style: normal;
+	/*    margin: 25px;*/
+}
+
+.auctions-filter-header {
+	display: inline-block;
+	background-color: #F0D600;
+	height: 35px;
+	width: 100%;
+/* 	line-height: normal; */
+	vertical-align: middle;
+	line-height: 35px;
+	padding-left: 12px;
+}
+
+.header-container {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.auction-filter-body {
+	background-color: #FFFFFF;
+	height: 490px;
+}
+
+.auction-filter-item {
+	color: #666666;
+	padding: 22px 0px 0px 18px;
+	font-size: 10pt;
+}
+
+.aplly-filter-button {
+	margin-top: 4px;
+	margin-left: 46px;
+	font-size: 10pt;
+}
+
+.auction-list {
+	background-color: #FFFFFF;
+}
+
+.auction-summary {
+	float:left;
+	background-color: #FFFFFF;
+	height: 225px;
+	/* To center the element */
+	margin: 0 auto;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.auction-offer-freight {
+	background-color: #f6f6f6;
+	width: 100%;
+	height: 30px;
+	margin: 0 auto;
+	font-size: 14pt;
+	font-weight: normal;
+	font-family: "Roboto";
+}
+
+.auction-summary-title {
+	float:left;
+	width:52%;
+	padding:15px;
+/* 	position: absolute; */
+	top: 23px;
+	left: 18px;
+	font-family: "Roboto";
+	font-size: 14pt;
+	font-style: normal;
+	color: #666666;
+}
+
+.auction-summary-header {
+	height: 61px;
+	margin: 0px 12px 0px 12px;
+	position:relative;
+}
+
+.auction-summary-title-underline {
+	border-bottom: solid #F0D600 1px;
+	height: 65px;
+	/*    width: 600px;*/
+	/*        margin: 0px 12px 0px 12px;*/
+}
+
+.auction-summary-details {
+	font-family: "Roboto";
+	font-size: 10pt;
+	margin-top: 15px;
+}
+
+.auction-summary-details tbody>tr>td {
+	border-bottom: solid thin white;
+	border-top: solid thin white;
+}
+
+.auction-summary-details .item-labels {
+	font-weight: bold;
+	font-family: 'Roboto-bold', sans-serif;
+	text-align: left;
+	vertical-align:middle;
+	padding-left: 5px;
+	padding-top: 5px;
+	color: #666666;
+	width: 15%;
+
+}
+
+.auction-summary-details .item-details {
+	text-align: left;
+	vertical-align:middle;
+	padding-left: 5px;
+	padding-top: 5px;
+	color: #666666;
+	width: 25%;
+}
+
+.view-auction-detail-container {
+	padding: 0;
+	margin: 0;
+}
+
+.view-auction-detail-button {
+	width: 100%;
+	height:37px;
+/* 	position: absolute; */
+	top:924px;
+	bottom: 0px;
+	left: 0px;
+}
+.view-auction-back-button {
+	width: 100%;
+	height:37px;
+/* 	position: absolute; */
+	top:924px;
+	bottom: 0px;
+	left: 0px;
+}
+
+.freight-bar-div{
+	margin: 0 auto;
+	height: 30px;
+	width: 100%;
+	height:25px;
+	background-color: #8CC119;
+/* 	background-color: #9DCA1B; */
+	font-size: 13pt;
+	font-weight: normal;
+	font-family: "Roboto";
+	color:#000;
+}
+.detail-bar-div{
+	margin: 0 auto;
+	height: 30px;
+	width: 100%;
+	height:25px;
+	background-color: #8CC119;
+/* 	background-color: #9DCA1B; */
+	font-size: 13pt;
+	font-weight: normal;
+	font-family: "Roboto";
+	color:#000;
+}
+.auction-bar-div{
+	width: 100%;
+	height:25px;
+	background-color: #8CC119;
+/* 	background-color: #9DCA1B; */
+	font-size: 13pt;
+	font-weight: normal;
+	font-family: "Roboto";
+
+}
+.auction-bar-div .item-labels {
+	font-weight: normal;
+	font-size=1.5em;
+	text-align: left;
+	padding-left: 8px;
+	color: #FFFFFF;
+	/*width: 30%;*/
+}
+.boxed-icon-container {
+	/*    text-align: right;*/
+	/*    margin-right: 0;*/
+	padding: 0px;
+}
+
+.boxed-icon {
+	color: #FFFFFF;
+	display: inline;
+	background-color: #F0D600;
+	padding: 4px 7px;
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+.boxed-icon-green {
+	color: #FFFFFF;
+	display: inline;
+	background-color: green;
+	padding: 4px 7px;
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+.mini-link {
+	font-size: 9pt;
+	color:#81c119;
+	cursor:pointer;
+}
+
+.page-location {
+	font-size: 14pt;
+	color: #666666;
+}
+
+.previous-page-location {
+	font-size: 14pt;
+	color: #9DCA1B;
+}
+
+.yellow-icon {
+	color: #F0D600;
+}
+
+.auction-number {	
+	text-align: center;
+	vertical-align:center;
+	background-color: #F0D600;
+	color: white;
+	border: #e0c52a solid thin;
+}
+.auction-number-result {	
+	
+	padding: 5px 5px 5px 5px;
+	font-size:1.5em;
+	text-align: center;
+	vertical-align:middle;
+	background-color: #F0D600;
+	color: white;
+	border: #e0c52a solid thin;
+}
+
+.auction-exp-div {
+	width:48%;
+	height:57px;
+	float: left;
+	font-weight: normal;
+	text-align: left;
+	vertical-align:center;
+	padding-top: 12px;
+	font-family:"Roboto";
+
+}
+.span-label-timer{
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Roboto-bold', sans-serif;
+	vertical-align:center;
+	font-size: 13pt;
+}
+.span-timer{
+	font-weight: normal;
+	text-align: center;
+	font-family:"Roboto";
+	vertical-align:center;
+	
+}
+.auction-exp {
+	/*font-weight: bold;*/
+	float:left;
+	top: 15px;
+	margin-right: auto;
+	position: absolute;
+	right: 150px;
+	padding: 5px 10px;
+	text-align: center;
+/* 	background-color: #74ca31; */
+/* 	color: white; */
+}
+
+.auction-main-info-container {
+	padding: 25px;
+	border-top: solid thin #E4E4E4;
+	border-bottom: solid thin #E4E4E4;
+}
+
+.auction-main-info {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	font-size: 16pt;
+	font-weight: normal;
+}
+
+.auction-main-info .item-labels {
+	color: #EFBE00;
+	font-weight: normal;
+	text-align: right;
+	text-align: right;
+	/*    font-size: 12pt;*/
+	/*     width: 20%;*/
+}
+
+.auction-main-info .item-details {
+	color: #666666;
+	font-weight: normal;
+	/*width: 30%;*/
+}
+
+
+
+.expanded-summary {
+	height: 750px;
+}
+
+.make-offer-title {
+	color: #666666;
+	height: 175px;
+	padding: 0px 12px 0px 25px;
+	font-size: 16pt;
+	width: 120px;
+}
+
+.big-next-sign {
+	
+}
+
+.origin-label {
+	color: #EFBE00;
+}
+
+.origin-amount {
+	color: #666666;
+	font-size: 25pt;
+}
+
+.origin-column {
+	text-align: center;
+}
+
+
+
+.normal-input {
+	border: solid thin #BCBCBC;
+	height: 37px;
+}
+
+.request-freight-link {
+	font-size: 11pt;
+	text-align: right;
+/* 	color: #608C1B; */
+	color: #FFFFFF;
+	cursor: pointer;
+	padding-top: 5px;
+}
+.offer-form-container {
+	background-color: #F5F5EC;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.offer-form-container-table {
+	width: 100%;
+}
+.offer-form {
+	margin: 0px 35px 0px 35px;
+}
+
+.offer-form-label {
+	color: #666666;
+	font-size: 14pt;
+	padding: 15px 15px 15px 5px;
+}
+
+.offer-form tbody>tr>td {
+	border-bottom: none;
+	border-top: none;
+}
+
+.offer-form-buttons {
+	padding-left: 50px;
+	padding-right: 10px;
+}
+
+.offer-form-table {
+	width: 90%;
+/* 	height:51px; */
+/* 	margin-top: 15px; */
+/* 	margin-bottom: 15px; */
+	margin: 10px 15px 10px 40px;
+	font-size: 10pt;
+	font-weight: normal;
+	font-family: "Roboto";
+/* 	padding: 0px 0px 0px 0px; */
+/* 	padding-bottom: 7.5px; */
+	border: #d9d7c9 solid thin;
+}
+
+.offer-form-table .offer-header td {
+	color: white;
+	background-color: #F0BF00;
+	padding: 0px;
+/* 	border-right: white solid thin; */
+	 
+}
+
+.offer-form-table .offer-even td {
+/* 	background-color: #edece6; */
+/* 	background-color: #dfded5; */
+	background-color:#f6f6f6;
+	color: #666666;
+	margin: 0 auto;
+	padding: 0px 0px 0px 0px;
+/* 	height:51px; */
+/*  	border-right: #d9d7c9 solid thin;  */
+}
+
+.offer-form-table .offer-odd td {
+	background-color: #FFFFFF;
+	color: #666666;
+/* 	padding: 15px 5px 15px 5px; */
+}
+
+.auction-main-result-container {
+	width: 100%;
+	/*    margin-left: 10px;*/
+	/*    padding-right: 0px;*/
+}
+
+.auction-main-result {
+	width: 100%;
+	margin: 0 auto;
+	font-size: 14pt;
+	font-weight: normal;
+	height: 60px;
+	background-color: #F7F7F7;
+	border-radius: 2px;
+}
+
+.auction-main-result .item-labels {
+	color: #EFBE00;
+	font-weight: normal;
+	text-align: right;
+	font-size: 13pt;
+/* 	padding-left: 10px; */
+	
+	/*    width: 10%;*/
+}
+
+.auction-main-result .item-details {
+	color: #666666;
+	font-weight: normal;
+	font-size: 13pt;
+	text-align: left;
+/* 	width: 20%; */
+}
+
+.offer-history-title {
+	/*    position: absolute;*/
+	/*    top: 23px;*/
+	/*    left: 18px;*/
+	font-family: "Roboto";
+	font-size: 16pt;
+	font-style: normal;
+	color: #666666;
+}
+
+.offer-history-header {
+	/*    height: 61px;*/
+	margin: 0px 12px 0px 0px;
+	font-weight: normal;
+}
+
+.offer-history-title-underline {
+	border-bottom: solid #F1F1F1 1px;
+	/*    height: 65px;*/
+	/*    width: 600px;*/
+	/*        margin: 0px 12px 0px 12px;*/
+}
+
+.offer-history-table {
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 13pt;
+	font-weight: normal;
+	font-family: "Roboto";
+	padding-bottom: 10px;
+}
+
+.offer-img {
+	width: 80px;
+	height:51px;
+	background-image: url('/app/imgs/realizar-oferta.png') no-repeat fixed center;
+	background-size:80px 51px;
+	border: 1px solid black;
+	background:#f1d430;
+	
+}
+.offer-shape2 {
+	polygon(0px 0px, 69px 2px, 82px 26px, 69px 51px, 0px 51px);
+	background:#f1d430;
+}
+/* td.image:before { */
+/*    content:url("/app/imgs/realizar-oferta.png"); */
+/* } */
+
+
+
+.offer-shape1 {
+     width: 80px; 
+     height: 30px; 
+     border: 3px solid #f1d430;
+     background-color: #f1d430;
+}
+
+.offer-shape {
+	
+    background-image: url("/app/imgs/realizar-oferta.png") no-repeat fixed center;
+}
+.offer-shape-cuadrat {
+     width: 100px; 
+     height: 100px; 
+     border: 3px solid #555;
+     background: #f1d430;
+}
+.offer-shape2 {
+     width: 0; 
+     height: 0; 
+     
+     border-top: 15px solid transparent;
+     border-left: 30px solid #f1d430;
+     border-bottom: 15px solid transparent; 
+}
+
+.offer-history-table .offer-header td {
+	color: white;
+	background-color: #F0BF00;
+	padding: 12px;
+	border-right: white solid thin;
+}
+
+.offer-history-table .offer-even td {
+	background-color: #f5f4ed;
+	color: #666666;
+	padding: 20px 5px 20px 5px;
+}
+
+.offer-history-table .offer-odd td {
+	background-color: #FFFFFF;
+	color: #666666;
+	padding: 20px 5px 20px 5px;
+}
+
+.add-auction-container {
+	padding-top: 15px;
+	/*    padding-left: 5px;*/
+	color: #666666;
+}
+
+.add-auction-summary {
+	height: 740px;
+}
+
+.add-auction-back-button {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+.nav .nav-center {
+	margin: 0;
+	float: none;
+}
+
+.navbar-inner {
+	text-align: center;
+}
+
+.error-box {
+	color: white;
+	background-color: #EF6700;
+	padding: 10px 15px 10px 15px;
+	margin-left: 43px;
+	margin-right: 43px;
+	font-size: 13pt;
+}
+
+textarea:focus, select:focus, input:focus, input[type]:focus,
+	.uneditable-input:focus {
+	border-color: rgba(119, 119, 119, 0.8) !important;
+	box-shadow: 0 1px 1px rgba(119, 119, 119, 0.075) inset, 0 0 8px
+		rgba(119, 119, 119, 0.6) !important;
+	outline: 0 none !important;
+}
+
+.quality-detail-container {
+	background-color: red;
+}
+
+.quality-detail-header {
+	background-color: #F0D600;
+	color: #FFFFFF;
+	padding: 9px 17px 9px 17px;
+	font-size: 9pt;
+}
+
+.quality-detail-body {
+	background-color: #F5F5EC;
+	color: #59595B;
+	padding: 23px;
+	font-size: 9pt;
+}
+
+.quality-detail-observation-title {
+	border-top: solid thin #DFDEDC;
+	padding-top: 18px;
+	padding-bottom: 3px;
+	color: #F0D600;
+}
+
+.quality-detail-observation-body {
+	color: #59595B;
+}
+
+.auction-form-container {
+	background-color: #FFFFFF;
+	color: #666666;
+	font-family: "Roboto";
+}
+
+.auction-form-title {
+	border-bottom: solid #F0D600 1px;
+	margin: 20px 30px;
+	padding: 0px 20px 10px 20px;
+	font-size: 19pt;
+}
+
+.auction-form-body {
+	background-color: #FFFFFF;
+}
+
+.table-container {
+	background-color: #FFFFFF;
+	padding-top: 10px;
+}
+
+.table-title {
+	border-bottom: solid #F0D600 1px;
+	margin: 20px 30px;
+	padding: 0px 20px 10px 20px;
+	font-size: 19pt;
+}
+
+#footerVersion {
+	font-size: 7pt;
+	color: #666666;
+}
+
+#loading-mask {
+	background-color: white;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+	text-align: center;
+}
+
+#loading-table {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+#loading-logo {
+	padding-bottom: 0;
+	vertical-align: bottom;
+}
+
+#loading-icon {
+	padding-top: 2%;
+	vertical-align: top;
+	font-family: "Roboto";
+	font-size: 13pt;
+	font-style: normal;
+	text-decoration: none;
+	color: #618C21;;
+}
+
+.custom-tooltip {
+	background-color: #F5F5EB;
+	color: #666666;
+	border: 1px solid;
+}
+.autOffer-tooltip {
+	background-color: #F5F5EB;
+	color: #666666;
+	border: 1px solid;
+	width: 260px;
+	height: auto;
+}
+/**
+	Styles for the COMPLETED status of auctions.
+	TODO This styles do not work well on IE < 9.
+		width: 354px;
+	height: 188px;
+*/
+.ribbon-wrapper {
+	width: 120px;
+	height: 50px;
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.ribbon-green {
+	font-weight: bold;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 2px 2px #666;
+	white-space: nowrap;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	position: relative;
+	padding: 7px 7px 7px 94px;
+	left: -5px;
+	top: 15px;
+	width: 520px;
+	background-color: #BFDC7A;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A),
+		to(#8EBF45));
+	background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45);
+	background-image: -moz-linear-gradient(top, #BFDC7A, #8EBF45);
+	background-image: -ms-linear-gradient(top, #BFDC7A, #8EBF45);
+	background-image: -o-linear-gradient(top, #BFDC7A, #8EBF45);
+	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.ribbon-green:before, .ribbon-green:after {
+	content: "";
+	border-top: 3px solid #6e8900;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	position: absolute;
+	bottom: -3px;
+}
+
+.ribbon-green:before {
+	left: 0;
+}
+
+.ribbon-green:after {
+	right: 0;
+}
+
+.ribbon-gray {
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	position: relative;
+	padding: 7px 7px 7px 94px;
+	left: -5px;
+	top: 15px;
+	width: 520px;
+	background-color: #b9b9b9;
+}
+
+.ribbon-gray:before, .ribbon-gray:after {
+	content: "";
+	border-top: 3px solid #6e8900;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	position: absolute;
+	bottom: -3px;
+}
+
+.ribbon-gray:after {
+	right: 0;
+}
+
+.ribbon-gray:before {
+	left: 0;
+}
+
+#orderByBar {
+	font-size: 11pt;
+	color: #666666;
+}
+
+.current-sort-text {
+	color: #666666;
+	font-size: 12pt;
+}
+
+.item-disabled.item-details, .item-disabled.item-labels, .item-disabled.auction-summary-title
+	{
+	color: #b9b9b9;
+}
+
+.form-group.required .control-label:not (.error ):after {
+	content: "*";
+	color: red;
+}
+
+.panel-footer-bar {
+	background-color: #8BC300;
+	height: 40px;
+	width: 100%;
+	margin-top: 10px;
+	margin-left: 0px;
+}
+
+
+.ui-widget {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: .8em;
+}
+
+.ui-widget-content {
+    background: #F9F9F9;
+    border: 1px solid #90d93f;
+    color: #222222;
+}
+
+.ui-dialog {
+    left: 0;
+    outline: 0 none;
+    padding: 0 !important;
+    position: absolute;
+    top: 0;
+}
+
+#success {
+    padding: 0;
+    margin: 0; 
+}
+
+.ui-dialog .ui-dialog-content {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    overflow: auto;
+    position: relative;
+    padding: 0 !important;
+}
+
+.ui-widget-header {
+    background: #b0de78;
+    border: 0;
+    color: #fff;
+    font-weight: normal;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    padding: 0.1em .5em;
+    position: relative;
+        font-size: 1em;
+}
+
+
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  font-size:1.3em;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.5em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   color: gold;
+}
+
+
+
+//RIBBON CONCRETED-ANONYMOUS
+.featured{
+    margin: 10px auto 10px auto;
+    width: 100px;
+    height: 90px;
+    background: white;
+    box-shadow: -1px -1px 5px #DDD;
+}
+
+/* This bit does the rhombus that sits in the top left hand corner */
+.featured:before{
+    content: "";
+    display: block;
+    position: relative;
+    width:0px;
+    height: 0px;
+    top: 25px;
+    left: -38px;  
+    width: 148px;
+    height: 30px;
+    box-shadow: 0 2px 0 #DDD;
+    font-size:1em;
+    text-align: center;
+    -webkit-transform: rotateZ(-45deg);
+    -moz-transform: rotateZ(-45deg);
+    
+    /* Rhombus */
+    border-width: 0 30px 30px 30px;
+    border-style: solid;
+    border-color: transparent transparent #757070 transparent;
+    
+    
+}
+
+/* This does the text "featured" and the gradient that makes it look curved */
+.featured:after{
+    display: block;
+    position: relative;
+    content: "CONCRETADO";
+    font-size:0.8em;
+    color: white;
+    top: -5px;
+    left: -38px;
+    width: 150px;
+    height: 30px;
+    padding-top: 10px;    
+    background: transparent;
+    background-image:
+        
+        -webkit-linear-gradient(45deg, 
+        transparent 0%,
+        transparent 77%,
+        rgba(0,0,0,0.3) 80%,
+        rgba(0,0,0,0.3) 11%, 
+        rgba(0,0,0,0.4) 82%,
+        transparent 83%
+        ),
+        
+        -webkit-linear-gradient(-45deg,
+        transparent 0%,
+        transparent 17%,
+        rgba(0,0,0,0.5) 18%,
+        rgba(0,0,0,0.3) 19%,
+        rgba(0,0,0,0.3) 20%,
+        transparent 23%
+        );
+    background-image:
+        -moz-linear-gradient(45deg, 
+        transparent 0%,
+        transparent 77%,
+        rgba(0,0,0,0.3) 80%,
+        rgba(0,0,0,0.3) 81%, 
+        rgba(0,0,0,0.4) 82%,
+        transparent 83%
+        ),
+        -moz-linear-gradient(-45deg,
+        transparent 0%,
+        transparent 17%,
+        rgba(0,0,0,0.5) 18%,
+        rgba(0,0,0,0.3) 19%,
+        rgba(0,0,0,0.3) 20%,
+        transparent 23%
+        );
+    
+    -webkit-transform: rotateZ(-45deg);
+    -moz-transform: rotateZ(-45deg);
+    
+/*     color: rgba(0,0,0,0.5); */
+	color: white;
+    font-weight: bold;
+    font-family: 'Roboto';
+    text-align: center;
+    text-shadow: 0 1px rgba(185,185,25,0.1);
+}
+
+
+ .class-with-width { width: 750px !important; }
+ 
+ .my-modal {
+ 	width: 750px;
+ 	height: 500px;
+ }

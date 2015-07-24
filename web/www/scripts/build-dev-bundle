@@ -1,0 +1,11 @@
+#!/bin/bash
+
+DEST=dev/js
+if [ ! -d $DEST ]; then
+    mkdir -p ${DEST}
+fi
+
+FILE=${DEST}/dev-bundle.js
+
+echo "[browserify] Build development bundle: $FILE"
+browserify main.js -t jstify --debug -o ${FILE}
