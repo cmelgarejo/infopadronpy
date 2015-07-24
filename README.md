@@ -6,6 +6,12 @@ En Paraguay, se dá el caso en el que nos afilian/inscriben sin consentimiento a
 
 Pueden ayudar a juntar más servicios de padrones, que sepan sean públicos, hasta ahora tengo dos ejemplos de solicitud de webservices públicos:
 
+Publicado el webservice inforpadronpy con la colaboración de Willian Toledo Aquino (@willin64) nuestro granito de arena al caos desinformativo de nuestro país
+
+https://infopadron.cmelgarejo.net/api/afiliaciones/1234567 
+
+(pongan el numero de cedula que se les cante)
+
 ##ANR
 
 ####Request: 
