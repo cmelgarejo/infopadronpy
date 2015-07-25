@@ -20,7 +20,7 @@ public class Conexiones {
 		try {
 
 
-			connection = DriverManager.getConnection("jdbc:postgresql://127.0.0.1:5432/infopadronpy", "postgres","infopadronXXX123");
+			connection = DriverManager.getConnection("jdbc:postgresql://127.0.0.1:5432/infopadron", "postgres","psql123");
 
 		} catch (SQLException e) {
 			System.out.println("Connection Failed! Check output console");
@@ -62,8 +62,8 @@ public class Conexiones {
 		try {
 
 			connection = DriverManager.getConnection(
-					"jdbc:postgresql://127.0.0.1:5432/infopadronpy", "postgres",
-					"infopadronXXX123");
+					"jdbc:postgresql://127.0.0.1:5432/infopadron", "postgres",
+					"psql123");
 
 		} catch (SQLException e) {
 

@@ -92,7 +92,7 @@ public class UnifiedQuery {
 	}
 
 	public static void main(String[] args) {
-		String cedula = "1111111";
+		String cedula = "434900";
 		List<Afiliation> afiliations = new ArrayList<Afiliation>();
 		ANRController anrCtrl = new ANRController();
 		

@@ -19,16 +19,16 @@ public class ControlRcpWorker {
 
 	private static final Logger logger = LoggerFactory
 			.getLogger(ControlRcpWorker.class);
-	private static final AtomicLong counter = new AtomicLong(0);
+	private static final AtomicLong counter = new AtomicLong(2000000);
 	private static final int MAIL_BATCH_SIZE = 50;
 
-	@Scheduled(fixedDelay = 10000)
+	@Scheduled(fixedDelay = 20000)
 	public void processInternationalPrices() {
 		Date now = new Date();
 		long increment = counter.incrementAndGet();
-		logger.trace("[" + increment + "] Running ControlRcpWorker  " + now);
-
-
-
+		logger.info("Running ControlRcpWorker cedula> " + increment + "   " + now);
+		
+		ControlRcp.controlDobleAfiliacion(String.valueOf(increment));
+		
 	}
 }

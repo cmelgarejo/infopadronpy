@@ -19,7 +19,7 @@ public class ControlRcp {
 	private static final Logger logger = LoggerFactory
 			.getLogger(ControlRcp.class);
 
-	public static void controlDobleAfiliacion() {
+	public static void controlDobleAfiliacion( String cedula) {
 		
 // Crear la DB con el nombre infopadron en Postgres 9.3 y la siguiente tabla
 //		CREATE TABLE dobleafiliacion
@@ -39,31 +39,30 @@ public class ControlRcp {
 //		ALTER TABLE dobleafiliacion
 //		  OWNER TO postgres;
 
-		for (int i = 0; i < 7000000; i++) {
 			
 			List<Afiliation> afiliations = new ArrayList<Afiliation>();
 			
 			ANRController anrCtrl = new ANRController();
-			Afiliation afiliationANR = anrCtrl.request(String.valueOf(i));
+			Afiliation afiliationANR = anrCtrl.request(cedula);
 			if (afiliationANR.getPartido() != null) {
 				afiliations.add(afiliationANR);
 			}
 
 			PLRAController plraCtrl = new PLRAController();
-			Afiliation afiliationPLRA = plraCtrl.request(String.valueOf(i));
+			Afiliation afiliationPLRA = plraCtrl.request(cedula);
 			if (afiliationPLRA.getPartido() != null) {
 				afiliations.add(afiliationPLRA);
 			}
 
 			PPQController ppqCtrl = new PPQController();
-			Afiliation afiliationPPQ = ppqCtrl.request(String.valueOf(i));
+			Afiliation afiliationPPQ = ppqCtrl.request(cedula);
 			if (afiliationPPQ.getPartido() != null) {
 				afiliations.add(afiliationPPQ);
 			}
 
 			if (afiliations.size() > 1) {
 				logger.info("-------------------------");
-				logger.info("Doble afiliacion : " + i);
+				logger.info("Doble afiliacion : " + cedula);
 				Conexiones db = new Conexiones();
 				Connection conn = db.connect();
 				PreparedStatement pst = null;
@@ -71,7 +70,7 @@ public class ControlRcp {
 				try {
 					pst = conn.prepareStatement(sqlInsert);
 					if (afiliationANR.getPartido() != null) {
-						pst.setString(1, String.valueOf(i));
+						pst.setString(1, cedula);
 						pst.setString(2, afiliationANR.getNombre_completo());
 						pst.setString(3, afiliationANR.getLugar_votacion());
 						pst.setString(4, afiliationANR.getMesa());
@@ -81,7 +80,7 @@ public class ControlRcp {
 					}
 
 					if (afiliationPLRA.getPartido() != null) {
-						pst.setString(1, String.valueOf(i));
+						pst.setString(1, cedula);
 						pst.setString(2, afiliationPLRA.getNombre_completo());
 						pst.setString(3, afiliationPLRA.getLugar_votacion());
 						pst.setString(4, afiliationPLRA.getMesa());
@@ -91,7 +90,7 @@ public class ControlRcp {
 					}
 
 					if (afiliationPPQ.getPartido() != null) {
-						pst.setString(1, String.valueOf(i));
+						pst.setString(1, cedula);
 						pst.setString(2, afiliationPPQ.getNombre_completo());
 						pst.setString(3, afiliationPPQ.getLugar_votacion());
 						pst.setString(4, afiliationPPQ.getMesa());
@@ -116,7 +115,7 @@ public class ControlRcp {
 				logger.info("PPQ: " + afiliationPPQ.toString());
 				logger.info("-------------------------");
 			}
-		}
+		
 	}
 
 	public void insertarEnDB() {
