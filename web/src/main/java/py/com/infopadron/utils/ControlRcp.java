@@ -21,6 +21,7 @@ public class ControlRcp {
 
 	public static void controlDobleAfiliacion() {
 		
+// Crear la DB con el nombre infopadron en Postgres 9.3 y la siguiente tabla
 //		CREATE TABLE dobleafiliacion
 //		(
 //		  id serial NOT NULL,
