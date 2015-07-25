@@ -19,7 +19,7 @@ https://github.com/pcoron3l/DondeVoto/tree/master/Apks
 
 ####Renuncia
 
-La información proveida por el servicio, es exlucsiva responsabilidad de los partidos, estos servicios son de acceso público, este servicio es sólo un proxy o canalizador de los siguientes padrones de acceso público: ANR, PLRA, PPQ.
+La información proveida por el servicio, es exclusiva responsabilidad de los partidos, estos servicios son de acceso público, este servicio es sólo un proxy o canalizador de los siguientes padrones de acceso público: ANR, PLRA, PPQ.
 
 ###Colaboradores
 
@@ -29,3 +29,4 @@ La información proveida por el servicio, es exlucsiva responsabilidad de los pa
 
 @pepeo_py
 
+@iMalignus
