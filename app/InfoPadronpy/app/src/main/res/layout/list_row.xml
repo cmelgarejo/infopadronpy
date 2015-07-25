@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="@color/primary_material_light"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:src="@drawable/abc_ratingbar_full_material"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_partido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Partido:"
+
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="13dip"
+    />
+
+
+    <TextView
+        android:text="Nombre:"
+  android:id="@+id/txt_nombre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_partido"
+          android:textSize="13dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="#040404"
+        android:typeface="sans"
+
+    />
+    <TextView
+        android:text="Ci:"
+  android:id="@+id/txt_ci"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_nombre"
+        android:textSize="13dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="#040404"
+        android:typeface="sans"
+
+        />
+    <TextView
+        android:text="Lugar de Votación:"
+        android:id="@+id/txt_lugar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_ci"
+        android:textSize="13dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="#040404"
+        android:typeface="sans"
+
+        />
+    <TextView
+        android:text="Mesa:"
+        android:id="@+id/txt_mesa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_lugar"
+        android:textSize="13dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="#040404"
+        android:typeface="sans"
+
+        />
+    <TextView
+        android:text="Orden:"
+        android:id="@+id/txt_orden"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_mesa"
+        android:textSize="13dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="#040404"
+        android:typeface="sans"
+
+        />
+</RelativeLayout>
