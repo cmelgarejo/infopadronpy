@@ -48,7 +48,7 @@ public class PLRAController {
 			
 			post.addHeader("Content-Type", "text/html;charset=UTF-8");
 			post.addHeader("Accept", "text/html");
-			// post.addHeader("Accept-Charset", "UTF-8");
+			post.addHeader("Accept-Charset", "UTF-8");
 
 			post.setEntity(requestString);
 			httpclient = new DefaultHttpClient();
@@ -135,7 +135,7 @@ public class PLRAController {
 	public static void main(String[] args) {
 		PLRAController anrctrl = new PLRAController();
 		//String cedula="2265485";//
-		String cedula="99999999";//
+		String cedula="3000570";//
 		anrctrl.request(cedula);
 		
 

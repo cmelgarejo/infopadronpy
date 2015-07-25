@@ -57,6 +57,8 @@ public class ANRController {
 
 			post.addHeader("Content-Type",
 					"application/x-www-form-urlencoded;charset=UTF-8");
+			//Accept-Language: es-419,es;q=0.8,en-US;q=0.6,en;q=0.4,pt;q=0.2,fr;q=0.2
+			post.addHeader("Accept-Language", "es-419,es;q=0.8,en-US;q=0.6,en;q=0.4,pt;q=0.2,fr;q=0.2");
 			post.addHeader("Accept", "text/xml");
 			// post.addHeader("Accept-Charset", "UTF-8");
 

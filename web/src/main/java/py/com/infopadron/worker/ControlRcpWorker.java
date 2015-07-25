@@ -26,9 +26,9 @@ public class ControlRcpWorker {
 	public void processInternationalPrices() {
 		Date now = new Date();
 		long increment = counter.incrementAndGet();
-		logger.info("Running ControlRcpWorker cedula> " + increment + "   " + now);
-		
-		ControlRcp.controlDobleAfiliacion(String.valueOf(increment));
+//		logger.info("Running ControlRcpWorker cedula> " + increment + "   " + now);
+//		
+//		ControlRcp.controlDobleAfiliacion(String.valueOf(increment));
 		
 	}
 }
