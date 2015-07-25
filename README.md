@@ -4,9 +4,25 @@ Este es un proyecto con la intención de encapsular los servicios web de todos l
 
 En Paraguay, se dá el caso en el que nos afilian/inscriben sin consentimiento a los partidos políticos, y para acceder a -nuestra- información debemos acudir en persona o por línea telefónica al TSJE (http://tsje.gov.py) lo cual es poco práctico; esta "multiafiliación" expone a las personas a una multa excesiva (200 jornales minimos) e inclusive cárcel. Es bien sabido que hasta figuran votos de personas ya fallecidas o infantes, qué impiden hacernos votar en distintas internas partidarias y exponernos a juicio? La poca jurisdicción del TSJE nos obliga a estar informados y tomar en nuestras manos la acción de verificar que no estén jugando con nuestra opinión.
 
-Pueden ayudar a juntar más servicios de padrones, que sepan sean públicos, hasta ahora tengo dos ejemplos de solicitud de webservices públicos:
+## Servicio REST online!
 
-##ANR
+Se ha publicado el webservice inforpadronpy con la colaboración de Willian Toledo Aquino (@willin64) nuestro granito de arena al caos desinformativo de nuestro país.
+
+https://infopadron.cmelgarejo.net/api/afiliaciones/0000000 
+
+Donde 0000000 deben reemplazar el numero de cedula a consultar.
+
+### APK
+
+App creada por Pedro Coronel (@pcoron3l tw: @pepeo_py)
+https://github.com/pcoron3l/DondeVoto/tree/master/Apks
+
+####Renuncia
+
+La información proveida por el servicio, es exlucsiva responsabilidad de los partidos, estos servicios son de acceso público, este servicio es sólo un proxy o canalizador de los siguientes padrones de acceso público:
+
+
+###ANR
 
 ####Request: 
 
@@ -300,7 +316,7 @@ Content-Type: text/xml;charset=UTF-8
 </resultados>
 ```
 
-#PLRA
+###PLRA
 
 ####Request:
 
@@ -328,7 +344,7 @@ Content-Type: text/html; charset=UTF-8
 [-1]
 ```
 
-##Patria Querida
+###Patria Querida
 
 ####Request: 
 
@@ -337,7 +353,7 @@ POST
 curl "http://www.patriaquerida.org/padronpq.php" -H "Origin: http://www.patriaquerida.org" -H "Accept-Encoding: gzip, deflate" -H "Accept-Language: es-419,es;q=0.8,en-US;q=0.6,en;q=0.4,pt;q=0.2,fr;q=0.2" -H "User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.89 Safari/537.36" -H "HTTPS: 1" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" -H "Cache-Control: max-age=0" -H "Referer: http://www.patriaquerida.org/padronpq.php" -H "Connection: keep-alive" -H "X-FirePHP-Version: 0.0.6" --data "Cedula_Identidad=9999999&btn_verificar=+Verificar+"%"BB+" --compressed
 
 
-##Padron General:
+###Padron General (RCP):
 
 ####Request:
 
