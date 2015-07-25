@@ -28,7 +28,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 public class PLRAController {
-	private static final Logger Logger = LoggerFactory
+	private static final Logger logger = LoggerFactory
 			.getLogger(PLRAController.class);
 
 
@@ -57,9 +57,9 @@ public class PLRAController {
 			BufferedReader br = new BufferedReader(new InputStreamReader(
 					(httpresponse.getEntity().getContent())));
 			String output = "";
-			System.out.println("Output from Server .... \n");
+			
 			while ((output = br.readLine()) != null) {
-				System.out.println(output);
+				
 				response += output;
 			}
 			//parseArray(response);
@@ -79,7 +79,7 @@ public class PLRAController {
 		System.out.println(response);
 		// Parsear 
 		if(response.indexOf("-1")>-1){
-			System.out.println("no esta afiliado");
+			logger.info("no esta afiliado al PLRA");
 			
 		}else{
 			afiliation = parseArray(response);

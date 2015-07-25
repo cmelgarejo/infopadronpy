@@ -35,7 +35,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 public class ANRController {
-	private static final Logger Logger = LoggerFactory
+	private static final Logger logger = LoggerFactory
 			.getLogger(ANRController.class);
 	private static final String ApiUrl = "http://www.feednoticias.com/app/padrones/anr.php";
 	private static final String ApiUser = "";
@@ -69,9 +69,9 @@ public class ANRController {
 			BufferedReader br = new BufferedReader(new InputStreamReader(
 					(httpresponse.getEntity().getContent())));
 			String output = "";
-			System.out.println("Output from Server .... \n");
+			
 			while ((output = br.readLine()) != null) {
-				System.out.println(output);
+				
 				response += output;
 			}
 			
@@ -92,6 +92,8 @@ public class ANRController {
 		// Parsear 
 		if(response.indexOf("ci")>-1){
 			afiliation = parseXML(response);
+		}else{
+			logger.info("no esta afiliado en ANR");
 		}
 		 
 		return afiliation;
@@ -125,7 +127,7 @@ public class ANRController {
 			afiliation.setLugar_votacion("Local: "+listLocal.item(0).getTextContent()+" Seccional: "+listSeccional.item(0).getTextContent()+" Distrito: "+listDistrito.item(0).getTextContent()+" Zona: " +listZona.item(0).getTextContent()+" Dpto: "+listDpto.item(0).getTextContent());
 			afiliation.setMesa(""+listMesa.item(0).getTextContent());
 			afiliation.setOrden(""+listOrden.item(0).getTextContent());
-			//System.out.println(afiliation.toString());
+			
 
 		} catch (ParserConfigurationException e) {
 		} catch (SAXException e) {
