@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:padding="5dip" >
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:gravity="bottom"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+  >
+        <EditText
+            android:id="@+id/editbuscar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Ingresar Cedula"
+            android:ems="10"
+            android:inputType="number">
+
+            <requestFocus />
+        </EditText>
+        <Button
+
+            android:id="@+id/btnbuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#b5b5b5"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/linearLayout2"
+        android:dividerHeight="1dp"
+        />
+
+</RelativeLayout>
