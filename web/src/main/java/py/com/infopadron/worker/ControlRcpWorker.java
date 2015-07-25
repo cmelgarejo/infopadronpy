@@ -27,12 +27,7 @@ public class ControlRcpWorker {
 		Date now = new Date();
 		long increment = counter.incrementAndGet();
 		logger.trace("[" + increment + "] Running ControlRcpWorker  " + now);
-//		boolean band =true;
-//		if(band){
-//			ControlRcp rcp = new ControlRcp();
-//			rcp.controlDobleAfiliacion();
-//			band=false;
-//		}
+
 
 
 	}
