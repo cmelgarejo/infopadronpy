@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import py.com.infopadron.controller.ANRController;
 import py.com.infopadron.controller.Afiliation;
 import py.com.infopadron.controller.PLRAController;
+import py.com.infopadron.controller.PPQController;
 import py.com.infopadron.controller.RCPController;
 import py.com.infopadron.dto.AfiliedDTO;
 
@@ -51,12 +52,21 @@ public class UnifiedQuery {
 		if (afiliationPLRA.getPartido() != null) {
 			afiliations.add(afiliationPLRA);
 		}
+		
+		PPQController ppqCtrl = new PPQController();
+		// cedula = "434900";//
+		Afiliation afiliationPPQ = ppqCtrl.request(cedula);
+		if (afiliationPPQ.getPartido() != null) {
+			afiliations.add(afiliationPPQ);
+		}
 
 		String nombre = "";
 		if (afiliationANR.getNombre_completo() != null) {
 			nombre = afiliationANR.getNombre_completo();
 		} else if (afiliationPLRA.getNombre_completo() != null) {
 			nombre = afiliationPLRA.getNombre_completo();
+		}else if (afiliationPPQ.getNombre_completo() != null) {
+			nombre = afiliationPPQ.getNombre_completo();
 		}
 
 		AfiliedDTO dto = new AfiliedDTO();
@@ -73,30 +83,42 @@ public class UnifiedQuery {
 		
 		
 		dto.setAfiliaciones(afiliations);
-
+		logger.info("ANR: " + afiliationANR.toString());
+		logger.info("PLRA: " + afiliationPLRA.toString());
+		logger.info("PPQ: " + afiliationPPQ.toString());
 		logger.info("------------------------------");
 		return new ResponseEntity<AfiliedDTO>(dto, HttpStatus.OK);
 
 	}
 
 	public static void main(String[] args) {
-		String cedula = "4426816";
+		String cedula = "434900";
 		List<Afiliation> afiliations = new ArrayList<Afiliation>();
 		ANRController anrCtrl = new ANRController();
-		// String cedula = "4942823";// DJALMA
+		
 		Afiliation afiliationANR = anrCtrl.request(cedula);
-		if (afiliationANR != null) {
+		if (afiliationANR.getPartido() != null) {
 			afiliations.add(afiliationANR);
 		}
-
 		PLRAController plraCtrl = new PLRAController();
-		// cedula = "2265485";//
+		
 		Afiliation afiliationPLRA = plraCtrl.request(cedula);
-		if (afiliationPLRA != null) {
+		if (afiliationPLRA.getPartido() != null) {
 			afiliations.add(afiliationPLRA);
 		}
+		
+		PPQController ppqCtrl = new PPQController();
+		Afiliation afiliationPPQ = ppqCtrl.request(cedula);
+		if (afiliationPPQ.getPartido() != null) {
+			afiliations.add(afiliationPPQ);
+		}
+		if(afiliations.size()>1){
+			
+		}
+		
 		System.out.println("ANR " + afiliationANR.toString());
 		System.out.println("PLRA: " + afiliationPLRA.toString());
+		System.out.println("PPQ: " + afiliationPPQ.toString());
 	}
 
 }

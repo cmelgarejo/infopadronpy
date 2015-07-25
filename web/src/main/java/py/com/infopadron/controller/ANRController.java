@@ -122,7 +122,7 @@ public class ANRController {
 			afiliation.setCi(""+listCi.item(0).getTextContent());
 			afiliation.setNombre_completo(""+listNombre.item(0).getTextContent()+" "+listApellido.item(0).getTextContent());
 			afiliation.setPartido("ANR");
-			afiliation.setLugar_votacion("Local: "+listLocal.item(0).getTextContent()+" Seccional: "+listSeccional.item(0).getTextContent()+" Distrito"+listDistrito.item(0).getTextContent()+" Zona: " +listZona.item(0).getTextContent()+" Dpto: "+listDpto.item(0).getTextContent());
+			afiliation.setLugar_votacion("Local: "+listLocal.item(0).getTextContent()+" Seccional: "+listSeccional.item(0).getTextContent()+" Distrito: "+listDistrito.item(0).getTextContent()+" Zona: " +listZona.item(0).getTextContent()+" Dpto: "+listDpto.item(0).getTextContent());
 			afiliation.setMesa(""+listMesa.item(0).getTextContent());
 			afiliation.setOrden(""+listOrden.item(0).getTextContent());
 			//System.out.println(afiliation.toString());
