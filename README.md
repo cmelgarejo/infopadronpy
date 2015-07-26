@@ -4,6 +4,10 @@ Este es un proyecto con la intención de encapsular los servicios web de todos l
 
 En Paraguay, se dá el caso en el que nos afilian/inscriben sin consentimiento a los partidos políticos, y para acceder a -nuestra- información debemos acudir en persona o por línea telefónica al TSJE (http://tsje.gov.py) lo cual es poco práctico; esta "multiafiliación" expone a las personas a una multa excesiva (200 jornales minimos) e inclusive cárcel. Es bien sabido que hasta figuran votos de personas ya fallecidas o infantes, qué impiden hacernos votar en distintas internas partidarias y exponernos a juicio? La poca jurisdicción del TSJE nos obliga a estar informados y tomar en nuestras manos la acción de verificar que no estén jugando con nuestra opinión.
 
+#Web de consulta
+
+https://infopadron.cmelgarejo.net/consulta.html
+
 #Aplicación
 
 Si pueden, instalen esta aplicación opensource (codigo abierto, libre) que hicimos un grupo de jóvenes que nos parece limitante la "solución" del TSJE para proporcionar información sobre como los partidos políticos juegan con nuestra información.
@@ -27,7 +31,7 @@ Saludos! :)
 
 Se ha publicado el webservice inforpadronpy con la colaboración de Willian Toledo Aquino (@willin64) nuestro granito de arena al caos desinformativo de nuestro país.
 
-https://infopadron.cmelgarejo.net/api/afiliaciones/0000000 
+https://infopadron.cmelgarejo.net/api/afiliaciones/0000000
 
 Donde 0000000 deben reemplazar el numero de cedula a consultar.
 
