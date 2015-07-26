@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-md-12">
+    <h3><a href="https://github.com/cmelgarejo/infopadronpy">InfoPadrónPY</a></h3>
+    <form>
+	  <input type="number" maxvalue="9999999" id="ci"/>
+	  <input id="blam" type="submit" value="Consultar" />
+    </form>
+    <br/>
+    <div id="resultado">
+    </div>
+    <script>
+    $(document).ready(function ready() {
+      $("form").submit(function submit(event){
+	    $("#resultado").html("<b>Cargando...</b><img src='https://www.cookmedical.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif'/>");
+        $.get("https://infopadron.cmelgarejo.net/api/afiliaciones/" + $("#ci").val()  , function get(data) {
+          var afiliaciones = "";
+	  	data.afiliaciones.forEach(function(a,idx,arr) {
+	  	  afiliaciones += "<tr><td>" + a.partido + "</td>" + "<td>" + a.mesa + "</td>" + "<td>" + a.orden + "</td>" + "<td>" + a.lugar_votacion + "</td></tr>"
+	  	});
+	  	$("#resultado").html(
+	  	 "Nombre completo: " + data.nombre_completo + "<br/><br/>" +
+	  	 "C.I.: " + data.ci + "<br/><br/>" +
+	  	 "<table class='table table-striped table-bordered'><thead><td>Partido</td><td>Mesa</td><td>Orden</td><td>Lugar de votación</td></thead>" + afiliaciones + "</table>"
+	  	);
+	    }, "json" );
+	    event.preventDefault();
+      });
+    });
+    </script>
+  </div>
+ </div>
+ </div>
+</body>
+</html>
