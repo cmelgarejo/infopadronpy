@@ -39,12 +39,12 @@ public class UnifiedQuery {
 		Gson gson = new Gson();
 		List<Afiliation> afiliations = new ArrayList<Afiliation>();
 
-		ANRController anrCtrl = new ANRController();
-		// String cedula = "4942823";// DJALMA
-		Afiliation afiliationANR = anrCtrl.request(cedula);
-		if (afiliationANR.getPartido() != null) {
-			afiliations.add(afiliationANR);
-		}
+//		ANRController anrCtrl = new ANRController();
+//		// String cedula = "4942823";// DJALMA
+//		Afiliation afiliationANR = anrCtrl.request(cedula);
+//		if (afiliationANR.getPartido() != null) {
+//			afiliations.add(afiliationANR);
+//		}
 
 		PLRAController plraCtrl = new PLRAController();
 		// cedula = "2265485";//
@@ -61,9 +61,10 @@ public class UnifiedQuery {
 		}
 
 		String nombre = "";
-		if (afiliationANR.getNombre_completo() != null) {
-			nombre = afiliationANR.getNombre_completo();
-		} else if (afiliationPLRA.getNombre_completo() != null) {
+//		if (afiliationANR.getNombre_completo() != null) {
+//			nombre = afiliationANR.getNombre_completo();
+//		} else 
+			if (afiliationPLRA.getNombre_completo() != null) {
 			nombre = afiliationPLRA.getNombre_completo();
 		}else if (afiliationPPQ.getNombre_completo() != null) {
 			nombre = afiliationPPQ.getNombre_completo();
@@ -83,7 +84,7 @@ public class UnifiedQuery {
 		
 		
 		dto.setAfiliaciones(afiliations);
-		logger.info("ANR: " + afiliationANR.toString());
+//		logger.info("ANR: " + afiliationANR.toString());
 		logger.info("PLRA: " + afiliationPLRA.toString());
 		logger.info("PPQ: " + afiliationPPQ.toString());
 		logger.info("------------------------------");
@@ -96,10 +97,10 @@ public class UnifiedQuery {
 		List<Afiliation> afiliations = new ArrayList<Afiliation>();
 		ANRController anrCtrl = new ANRController();
 		
-		Afiliation afiliationANR = anrCtrl.request(cedula);
-		if (afiliationANR.getPartido() != null) {
-			afiliations.add(afiliationANR);
-		}
+//		Afiliation afiliationANR = anrCtrl.request(cedula);
+//		if (afiliationANR.getPartido() != null) {
+//			afiliations.add(afiliationANR);
+//		}
 		PLRAController plraCtrl = new PLRAController();
 		
 		Afiliation afiliationPLRA = plraCtrl.request(cedula);
@@ -116,7 +117,7 @@ public class UnifiedQuery {
 			
 		}
 		
-		System.out.println("ANR " + afiliationANR.toString());
+//		System.out.println("ANR " + afiliationANR.toString());
 		System.out.println("PLRA: " + afiliationPLRA.toString());
 		System.out.println("PPQ: " + afiliationPPQ.toString());
 	}
