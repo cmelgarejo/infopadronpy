@@ -16,7 +16,7 @@
 		<log4j.version>1.2.16</log4j.version>
 		<junit.version>4.8.2</junit.version>
 		<jackson.version>2.10.1</jackson.version>
-		<hibernate.version>4.3.0.Final</hibernate.version>
+		<hibernate.version>5.3.20.Final</hibernate.version>
 		<postgres.version>9.1-901.jdbc4</postgres.version>
 		<hibernate-jpa-api.version>1.0.0.Final</hibernate-jpa-api.version>
 		<jsp-api.version>2.1</jsp-api.version>
