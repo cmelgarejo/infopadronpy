@@ -9,7 +9,7 @@
   <url>http://maven.apache.org</url>
   	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>5.2.2.RELEASE</spring.version>
+		<spring.version>5.2.20.RELEASE</spring.version>
 		<javax.servlet-api.version>3.0.1</javax.servlet-api.version>
 		<spring-data-jpa.version>1.4.3.RELEASE</spring-data-jpa.version>
 		<slf4j.version>1.6.1</slf4j.version>
